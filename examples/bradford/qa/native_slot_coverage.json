@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "slides": [
+    {
+      "slide": 1,
+      "slots": 14,
+      "slot_names": [
+        "ASSET_A01_O01",
+        "ASSET_A02_O02",
+        "ASSET_A03_O03",
+        "ASSET_A04_O04",
+        "ASSET_A05_O05",
+        "ASSET_A05_O06",
+        "ASSET_A06_O07",
+        "ASSET_A06_O08",
+        "ASSET_A06_O09",
+        "ASSET_A07_O10",
+        "ASSET_A07_O11",
+        "ASSET_A08_O12",
+        "ASSET_A09_O13",
+        "ASSET_A10_O14"
+      ]
+    },
+    {
+      "slide": 2,
+      "slots": 14,
+      "slot_names": [
+        "ASSET_A01_O01",
+        "ASSET_A02_O02",
+        "ASSET_A03_O03",
+        "ASSET_A04_O04",
+        "ASSET_A05_O05",
+        "ASSET_A05_O06",
+        "ASSET_A06_O07",
+        "ASSET_A06_O08",
+        "ASSET_A06_O09",
+        "ASSET_A07_O10",
+        "ASSET_A07_O11",
+        "ASSET_A08_O12",
+        "ASSET_A09_O13",
+        "ASSET_A10_O14"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "reference_id": "Bradford-B-r1",
+  "same_approved_reference_preserved": true,
+  "separate_standard_unknown_blank_inputs": true,
+  "blank_remains_pink_after_reagent": true,
+  "measurement_wavelength_nm": 595,
+  "blank_subtraction_equation": "A_corrected = A_sample - A_blank",
+  "standard_calibration_and_unknown_signal_feed_quantification": true,
+  "invented_evidence_plots": 0,
+  "decorative_instrument_arrow_removed": true,
+  "asset_regions_covered": 11,
+  "unique_assets": 10,
+  "placement_occurrences": 14,
+  "visual_review_scope": "All generated assets on white/dark backgrounds; both exported native frame slides individually inspected. Original PowerPoint application rendering not claimed."
+}

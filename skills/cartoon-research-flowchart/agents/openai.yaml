@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cartoon Research Flowchart"
+  short_description: "Choose cartoon concepts, then get assets and an empty PPT"
+  default_prompt: "Use $cartoon-research-flowchart to extract my paper into several cartoon concepts, ask for my selection and revisions, then deliver all transparent assets and an empty editable PowerPoint frame for manual assembly."

@@ -1,0 +1,72 @@
+[
+  {
+    "asset_id": "A01",
+    "file": "A01.txt",
+    "references": [
+      "../reference/Bradford-B-r1.png"
+    ]
+  },
+  {
+    "asset_id": "A02",
+    "file": "A02.txt",
+    "references": [
+      "../reference/Bradford-B-r1.png"
+    ]
+  },
+  {
+    "asset_id": "A03",
+    "file": "A03.txt",
+    "references": [
+      "../reference/Bradford-B-r1.png"
+    ]
+  },
+  {
+    "asset_id": "A04",
+    "file": "A04.txt",
+    "references": [
+      "../reference/Bradford-B-r1.png"
+    ]
+  },
+  {
+    "asset_id": "A05",
+    "file": "A05.txt",
+    "references": [
+      "../reference/Bradford-B-r1.png"
+    ]
+  },
+  {
+    "asset_id": "A06",
+    "file": "A06.txt",
+    "references": [
+      "../reference/Bradford-B-r1.png"
+    ]
+  },
+  {
+    "asset_id": "A07",
+    "file": "A07.txt",
+    "references": [
+      "../reference/Bradford-B-r1.png"
+    ]
+  },
+  {
+    "asset_id": "A08",
+    "file": "A08.txt",
+    "references": [
+      "../reference/Bradford-B-r1.png"
+    ]
+  },
+  {
+    "asset_id": "A09",
+    "file": "A09.txt",
+    "references": [
+      "../reference/Bradford-B-r1.png"
+    ]
+  },
+  {
+    "asset_id": "A10",
+    "file": "A10.txt",
+    "references": [
+      "../reference/Bradford-B-r1.png"
+    ]
+  }
+]

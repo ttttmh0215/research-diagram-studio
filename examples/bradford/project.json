@@ -1,0 +1,1458 @@
+{
+  "schema_version": 1,
+  "stage": "ready",
+  "selected_id": "Bradford-B-r1",
+  "approved": {
+    "id": "Bradford-B-r1",
+    "file": "reference/Bradford-B-r1.png",
+    "user_statement": "Bradford-B-r1（生物实验）",
+    "scope": "The user selected this candidate in response to a request to continue with transparent assets and an editable PPT frame.",
+    "sha256": "3beaa4d55e2013799f8730f030d400232b235fb02507432b025bc4020a944c88"
+  },
+  "canvas": {
+    "width": 1681,
+    "height": 936,
+    "unit": "px"
+  },
+  "assets": [
+    {
+      "id": "A01",
+      "name": "unbound_protein",
+      "subject": "ONE compact stylized unbound protein ribbon, combining red, golden-yellow and violet ribbon helices as a single folded protein schematic. Match the colorful unbound protein in the UPPER LEFT mechanism panel. No molecules attached, no dye spheres, no plus sign. A recognizable scientific cartoon symbol, not an exact molecular structure.",
+      "aspect": "approximately square",
+      "minimum": [
+        768,
+        768
+      ],
+      "file": "assets/A01_unbound_protein.png",
+      "status": "actual",
+      "kind": "generated",
+      "min_size_px": [
+        768,
+        768
+      ],
+      "prompt": "Use case: background-extraction / scientific-educational illustration.\nCreate ONE high-resolution standalone transparent PNG asset for manual placement in PowerPoint.\nAsset: A01. Subject: ONE compact stylized unbound protein ribbon, combining red, golden-yellow and violet ribbon helices as a single folded protein schematic. Match the colorful unbound protein in the UPPER LEFT mechanism panel. No molecules attached, no dye spheres, no plus sign. A recognizable scientific cartoon symbol, not an exact molecular structure.\nUse the attached APPROVED Bradford reference ONLY for the cartoon art style, outline, shading, palette, perspective and identity of the intended object. Isolate and redraw this subject at high resolution rather than returning the whole figure.\nComposition: approximately square. Aim for about 1536 pixels along the longer useful subject dimension, with crisp dark ink edges at small print sizes. Keep the full subject, about 8 percent useful transparent padding, and no cropped edge.\nThe output must have genuine ALPHA TRANSPARENCY, including between isolated beads/vials and through outside negative space. No white background, white rectangle, checkerboard, panel, card, border, text, formula, title, workflow arrow or watermark.\nMatch the polished cartoon/comic style of the supplied reference, not a photograph. Scientific object silhouettes are conceptual illustrations; do not add fabricated microscopy, exact molecular bonds, measurements or results. Return ONLY this ONE semantic asset.",
+      "references": [
+        "reference/Bradford-B-r1.png"
+      ],
+      "pixel_size": [
+        1488,
+        1057
+      ],
+      "sha256": "c0b2dc6f29096687eb0b0424c10f767611ecea67d6aaea60ce1ddec94e272b74"
+    },
+    {
+      "id": "A02",
+      "name": "free_dye_cluster",
+      "subject": "ONE coherent cluster of about nine separate red/ruby round dye beads, staggered in two loose rows. Match the small red Coomassie dye bead cluster in the LEFT mechanism panel. Every bead is unattached, with NO bonds, lattice or molecular formula. Smooth comic shading and dark outlines; no protein.",
+      "aspect": "wide 1.6:1",
+      "minimum": [
+        900,
+        550
+      ],
+      "file": "assets/A02_free_dye_cluster.png",
+      "status": "actual",
+      "kind": "generated",
+      "min_size_px": [
+        900,
+        550
+      ],
+      "prompt": "Use case: background-extraction / scientific-educational illustration.\nCreate ONE high-resolution standalone transparent PNG asset for manual placement in PowerPoint.\nAsset: A02. Subject: ONE coherent cluster of about nine separate red/ruby round dye beads, staggered in two loose rows. Match the small red Coomassie dye bead cluster in the LEFT mechanism panel. Every bead is unattached, with NO bonds, lattice or molecular formula. Smooth comic shading and dark outlines; no protein.\nUse the attached APPROVED Bradford reference ONLY for the cartoon art style, outline, shading, palette, perspective and identity of the intended object. Isolate and redraw this subject at high resolution rather than returning the whole figure.\nComposition: wide 1.6:1. Aim for about 1536 pixels along the longer useful subject dimension, with crisp dark ink edges at small print sizes. Keep the full subject, about 8 percent useful transparent padding, and no cropped edge.\nThe output must have genuine ALPHA TRANSPARENCY, including between isolated beads/vials and through outside negative space. No white background, white rectangle, checkerboard, panel, card, border, text, formula, title, workflow arrow or watermark.\nMatch the polished cartoon/comic style of the supplied reference, not a photograph. Scientific object silhouettes are conceptual illustrations; do not add fabricated microscopy, exact molecular bonds, measurements or results. Return ONLY this ONE semantic asset.",
+      "references": [
+        "reference/Bradford-B-r1.png"
+      ],
+      "pixel_size": [
+        1586,
+        992
+      ],
+      "sha256": "c322e831856ca2383ae58765790569b4dfe4a0121546e9aac55d5993810aa2cf"
+    },
+    {
+      "id": "A03",
+      "name": "blue_protein_dye_complex",
+      "subject": "ONE compact folded blue protein ribbon with several small blue dye beads associated around it, matching the BLUE PROTEIN-DYE COMPLEX at the LOWER LEFT of the approved reference. Use different blue tones, clear dark outlines and restrained soft cyan highlights. All associated beads belong to one coherent conceptual complex. No red unbound beads. This is a schematic icon, not a resolved molecular structure or evidence image.",
+      "aspect": "approximately square",
+      "minimum": [
+        768,
+        768
+      ],
+      "file": "assets/A03_blue_protein_dye_complex.png",
+      "status": "actual",
+      "kind": "generated",
+      "min_size_px": [
+        768,
+        768
+      ],
+      "prompt": "Use case: background-extraction / scientific-educational illustration.\nCreate ONE high-resolution standalone transparent PNG asset for manual placement in PowerPoint.\nAsset: A03. Subject: ONE compact folded blue protein ribbon with several small blue dye beads associated around it, matching the BLUE PROTEIN-DYE COMPLEX at the LOWER LEFT of the approved reference. Use different blue tones, clear dark outlines and restrained soft cyan highlights. All associated beads belong to one coherent conceptual complex. No red unbound beads. This is a schematic icon, not a resolved molecular structure or evidence image.\nUse the attached APPROVED Bradford reference ONLY for the cartoon art style, outline, shading, palette, perspective and identity of the intended object. Isolate and redraw this subject at high resolution rather than returning the whole figure.\nComposition: approximately square. Aim for about 1536 pixels along the longer useful subject dimension, with crisp dark ink edges at small print sizes. Keep the full subject, about 8 percent useful transparent padding, and no cropped edge.\nThe output must have genuine ALPHA TRANSPARENCY, including between isolated beads/vials and through outside negative space. No white background, white rectangle, checkerboard, panel, card, border, text, formula, title, workflow arrow or watermark.\nMatch the polished cartoon/comic style of the supplied reference, not a photograph. Scientific object silhouettes are conceptual illustrations; do not add fabricated microscopy, exact molecular bonds, measurements or results. Return ONLY this ONE semantic asset.",
+      "references": [
+        "reference/Bradford-B-r1.png"
+      ],
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "sha256": "7a4c467c22b0b502721bb8a9d86f10e9536070463632da759140ea642a3a97d0"
+    },
+    {
+      "id": "A04",
+      "name": "five_standard_vials",
+      "subject": "ONE group of FIVE capped transparent sample vials standing next to each other in one row, matching the KNOWN STANDARDS panel of the reference. Dark blue round caps, pale-to-dark blue liquid across the row, consistent fill heights, subtle highlights, no rack, no labels or concentration numbers. Complete vial bases and caps.",
+      "aspect": "wide about 2:1",
+      "minimum": [
+        1100,
+        550
+      ],
+      "file": "assets/A04_five_standard_vials.png",
+      "status": "actual",
+      "kind": "generated",
+      "min_size_px": [
+        1100,
+        550
+      ],
+      "prompt": "Use case: background-extraction / scientific-educational illustration.\nCreate ONE high-resolution standalone transparent PNG asset for manual placement in PowerPoint.\nAsset: A04. Subject: ONE group of FIVE capped transparent sample vials standing next to each other in one row, matching the KNOWN STANDARDS panel of the reference. Dark blue round caps, pale-to-dark blue liquid across the row, consistent fill heights, subtle highlights, no rack, no labels or concentration numbers. Complete vial bases and caps.\nUse the attached APPROVED Bradford reference ONLY for the cartoon art style, outline, shading, palette, perspective and identity of the intended object. Isolate and redraw this subject at high resolution rather than returning the whole figure.\nComposition: wide about 2:1. Aim for about 1536 pixels along the longer useful subject dimension, with crisp dark ink edges at small print sizes. Keep the full subject, about 8 percent useful transparent padding, and no cropped edge.\nThe output must have genuine ALPHA TRANSPARENCY, including between isolated beads/vials and through outside negative space. No white background, white rectangle, checkerboard, panel, card, border, text, formula, title, workflow arrow or watermark.\nMatch the polished cartoon/comic style of the supplied reference, not a photograph. Scientific object silhouettes are conceptual illustrations; do not add fabricated microscopy, exact molecular bonds, measurements or results. Return ONLY this ONE semantic asset.",
+      "references": [
+        "reference/Bradford-B-r1.png"
+      ],
+      "pixel_size": [
+        1774,
+        887
+      ],
+      "sha256": "3863becf01cd5d9259885e18f485af8265ef0bfab93560dec3d8a4732e190f63"
+    },
+    {
+      "id": "A05",
+      "name": "capped_sample_vial",
+      "subject": "ONE closed transparent sample vial with a dark blue cap and a small amount of very pale blue liquid. Match the single vials in the UNKNOWN SAMPLE and REAGENT BLANK input panels. Upright front/three-quarter view, rounded tube base, clean highlights. No rack, no label, no graduations. This same icon will be reused for those two input positions.",
+      "aspect": "portrait about 0.65:1",
+      "minimum": [
+        512,
+        900
+      ],
+      "file": "assets/A05_capped_sample_vial.png",
+      "status": "actual",
+      "kind": "generated",
+      "min_size_px": [
+        512,
+        900
+      ],
+      "prompt": "Use case: background-extraction / scientific-educational illustration.\nCreate ONE high-resolution standalone transparent PNG asset for manual placement in PowerPoint.\nAsset: A05. Subject: ONE closed transparent sample vial with a dark blue cap and a small amount of very pale blue liquid. Match the single vials in the UNKNOWN SAMPLE and REAGENT BLANK input panels. Upright front/three-quarter view, rounded tube base, clean highlights. No rack, no label, no graduations. This same icon will be reused for those two input positions.\nUse the attached APPROVED Bradford reference ONLY for the cartoon art style, outline, shading, palette, perspective and identity of the intended object. Isolate and redraw this subject at high resolution rather than returning the whole figure.\nComposition: portrait about 0.65:1. Aim for about 1536 pixels along the longer useful subject dimension, with crisp dark ink edges at small print sizes. Keep the full subject, about 8 percent useful transparent padding, and no cropped edge.\nThe output must have genuine ALPHA TRANSPARENCY, including between isolated beads/vials and through outside negative space. No white background, white rectangle, checkerboard, panel, card, border, text, formula, title, workflow arrow or watermark.\nMatch the polished cartoon/comic style of the supplied reference, not a photograph. Scientific object silhouettes are conceptual illustrations; do not add fabricated microscopy, exact molecular bonds, measurements or results. Return ONLY this ONE semantic asset.",
+      "references": [
+        "reference/Bradford-B-r1.png"
+      ],
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "sha256": "4c71237dec062745801894e654cb9d31733d3b9f6eda46819ee4f7b138814a97"
+    },
+    {
+      "id": "A06",
+      "name": "pipette_red_drop",
+      "subject": "ONE small pale blue and white micropipette angled from upper-right toward lower-left, with a SINGLE suspended red/brown reagent droplet directly below the tip. Match the three identical reagent-addition pipette motifs in the reference. Keep pipette plus droplet as one coherent vignette. No tube, hand, label, splash or connector. Both ends of pipette and the complete droplet visible.",
+      "aspect": "approximately square",
+      "minimum": [
+        768,
+        768
+      ],
+      "file": "assets/A06_pipette_red_drop.png",
+      "status": "actual",
+      "kind": "generated",
+      "min_size_px": [
+        768,
+        768
+      ],
+      "prompt": "Use case: background-extraction / scientific-educational illustration.\nCreate ONE high-resolution standalone transparent PNG asset for manual placement in PowerPoint.\nAsset: A06. Subject: ONE small pale blue and white micropipette angled from upper-right toward lower-left, with a SINGLE suspended red/brown reagent droplet directly below the tip. Match the three identical reagent-addition pipette motifs in the reference. Keep pipette plus droplet as one coherent vignette. No tube, hand, label, splash or connector. Both ends of pipette and the complete droplet visible.\nUse the attached APPROVED Bradford reference ONLY for the cartoon art style, outline, shading, palette, perspective and identity of the intended object. Isolate and redraw this subject at high resolution rather than returning the whole figure.\nComposition: approximately square. Aim for about 1536 pixels along the longer useful subject dimension, with crisp dark ink edges at small print sizes. Keep the full subject, about 8 percent useful transparent padding, and no cropped edge.\nThe output must have genuine ALPHA TRANSPARENCY, including between isolated beads/vials and through outside negative space. No white background, white rectangle, checkerboard, panel, card, border, text, formula, title, workflow arrow or watermark.\nMatch the polished cartoon/comic style of the supplied reference, not a photograph. Scientific object silhouettes are conceptual illustrations; do not add fabricated microscopy, exact molecular bonds, measurements or results. Return ONLY this ONE semantic asset.",
+      "references": [
+        "reference/Bradford-B-r1.png"
+      ],
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "sha256": "197f95262cee74a93341a0fb2ae9b59412f55bb40a5800f5a7bca6d865666909"
+    },
+    {
+      "id": "A07",
+      "name": "open_blue_bound_sample",
+      "subject": "ONE upright open transparent microtube, uncapped, with a flared circular lip, rounded/tapered base and BLUE liquid filling approximately half its height. Match the two protein-bound samples at the center of the reference. Include no pipette or droplet; these will be separate assets. No cap, labels, numbers or markings.",
+      "aspect": "portrait about 0.65:1",
+      "minimum": [
+        512,
+        900
+      ],
+      "file": "assets/A07_open_blue_bound_sample.png",
+      "status": "actual",
+      "kind": "generated",
+      "min_size_px": [
+        512,
+        900
+      ],
+      "prompt": "Use case: background-extraction / scientific-educational illustration.\nCreate ONE high-resolution standalone transparent PNG asset for manual placement in PowerPoint.\nAsset: A07. Subject: ONE upright open transparent microtube, uncapped, with a flared circular lip, rounded/tapered base and BLUE liquid filling approximately half its height. Match the two protein-bound samples at the center of the reference. Include no pipette or droplet; these will be separate assets. No cap, labels, numbers or markings.\nUse the attached APPROVED Bradford reference ONLY for the cartoon art style, outline, shading, palette, perspective and identity of the intended object. Isolate and redraw this subject at high resolution rather than returning the whole figure.\nComposition: portrait about 0.65:1. Aim for about 1536 pixels along the longer useful subject dimension, with crisp dark ink edges at small print sizes. Keep the full subject, about 8 percent useful transparent padding, and no cropped edge.\nThe output must have genuine ALPHA TRANSPARENCY, including between isolated beads/vials and through outside negative space. No white background, white rectangle, checkerboard, panel, card, border, text, formula, title, workflow arrow or watermark.\nMatch the polished cartoon/comic style of the supplied reference, not a photograph. Scientific object silhouettes are conceptual illustrations; do not add fabricated microscopy, exact molecular bonds, measurements or results. Return ONLY this ONE semantic asset.",
+      "references": [
+        "reference/Bradford-B-r1.png"
+      ],
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "sha256": "1d0092d89c738aba7343aa1d7e600c3303d95b58f034b64b6a52e2216a0fac14"
+    },
+    {
+      "id": "A08",
+      "name": "open_blank_reagent",
+      "subject": "ONE upright open transparent microtube, uncapped, with a flared circular lip, rounded/tapered base and PALE PINK/REDDISH reagent liquid filling approximately half its height. Match the bottom, protein-free reagent blank after dye addition in the reference. It must remain pale pink, not turn dark blue. No protein, cap, pipette, droplet, label, numbers or markings.",
+      "aspect": "portrait about 0.65:1",
+      "minimum": [
+        512,
+        900
+      ],
+      "file": "assets/A08_open_blank_reagent.png",
+      "status": "actual",
+      "kind": "generated",
+      "min_size_px": [
+        512,
+        900
+      ],
+      "prompt": "Use case: background-extraction / scientific-educational illustration.\nCreate ONE high-resolution standalone transparent PNG asset for manual placement in PowerPoint.\nAsset: A08. Subject: ONE upright open transparent microtube, uncapped, with a flared circular lip, rounded/tapered base and PALE PINK/REDDISH reagent liquid filling approximately half its height. Match the bottom, protein-free reagent blank after dye addition in the reference. It must remain pale pink, not turn dark blue. No protein, cap, pipette, droplet, label, numbers or markings.\nUse the attached APPROVED Bradford reference ONLY for the cartoon art style, outline, shading, palette, perspective and identity of the intended object. Isolate and redraw this subject at high resolution rather than returning the whole figure.\nComposition: portrait about 0.65:1. Aim for about 1536 pixels along the longer useful subject dimension, with crisp dark ink edges at small print sizes. Keep the full subject, about 8 percent useful transparent padding, and no cropped edge.\nThe output must have genuine ALPHA TRANSPARENCY, including between isolated beads/vials and through outside negative space. No white background, white rectangle, checkerboard, panel, card, border, text, formula, title, workflow arrow or watermark.\nMatch the polished cartoon/comic style of the supplied reference, not a photograph. Scientific object silhouettes are conceptual illustrations; do not add fabricated microscopy, exact molecular bonds, measurements or results. Return ONLY this ONE semantic asset.",
+      "references": [
+        "reference/Bradford-B-r1.png"
+      ],
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "sha256": "92ee73e3cf2cfaee78c1f9c821b7568a474c2a0ac0413b0a2eb60605bc7a2e6f"
+    },
+    {
+      "id": "A09",
+      "name": "spectrophotometer",
+      "subject": "ONE compact tabletop spectrophotometer body in off-white and gray with navy-blue trim, matching the instrument in the TOP RIGHT panel of the reference. Three-quarter front view; open dark sample compartment on the LEFT, small EMPTY pale-blue display screen on the UPPER RIGHT, and three small round front-panel buttons below. The display must be totally blank for editable PowerPoint text later. No detached cuvette in front, no instrument label, no reading, no plots, no arrows, no purple decoration. Complete apparatus silhouette.",
+      "aspect": "landscape about 1.4:1",
+      "minimum": [
+        1000,
+        700
+      ],
+      "file": "assets/A09_spectrophotometer.png",
+      "status": "actual",
+      "kind": "generated",
+      "min_size_px": [
+        1000,
+        700
+      ],
+      "prompt": "Use case: background-extraction / scientific-educational illustration.\nCreate ONE high-resolution standalone transparent PNG asset for manual placement in PowerPoint.\nAsset: A09. Subject: ONE compact tabletop spectrophotometer body in off-white and gray with navy-blue trim, matching the instrument in the TOP RIGHT panel of the reference. Three-quarter front view; open dark sample compartment on the LEFT, small EMPTY pale-blue display screen on the UPPER RIGHT, and three small round front-panel buttons below. The display must be totally blank for editable PowerPoint text later. No detached cuvette in front, no instrument label, no reading, no plots, no arrows, no purple decoration. Complete apparatus silhouette.\nUse the attached APPROVED Bradford reference ONLY for the cartoon art style, outline, shading, palette, perspective and identity of the intended object. Isolate and redraw this subject at high resolution rather than returning the whole figure.\nComposition: landscape about 1.4:1. Aim for about 1536 pixels along the longer useful subject dimension, with crisp dark ink edges at small print sizes. Keep the full subject, about 8 percent useful transparent padding, and no cropped edge.\nThe output must have genuine ALPHA TRANSPARENCY, including between isolated beads/vials and through outside negative space. No white background, white rectangle, checkerboard, panel, card, border, text, formula, title, workflow arrow or watermark.\nMatch the polished cartoon/comic style of the supplied reference, not a photograph. Scientific object silhouettes are conceptual illustrations; do not add fabricated microscopy, exact molecular bonds, measurements or results. Return ONLY this ONE semantic asset.",
+      "references": [
+        "reference/Bradford-B-r1.png"
+      ],
+      "pixel_size": [
+        1487,
+        1058
+      ],
+      "sha256": "8c8d26f47910e355267b38cd42e51e72e4ae0bebea96e7cbe24cc82b1d71a35c"
+    },
+    {
+      "id": "A10",
+      "name": "blue_cuvette",
+      "subject": "ONE upright clear rectangular spectrophotometer cuvette containing blue liquid to roughly half its height, matching the detached foreground cuvette in front of the instrument in the reference. Open rectangular top, glass wall highlights, flat rectangular base, three-quarter front perspective. No instrument, cap, label, scales, numbers or surrounding platform.",
+      "aspect": "portrait about 0.6:1",
+      "minimum": [
+        512,
+        900
+      ],
+      "file": "assets/A10_blue_cuvette.png",
+      "status": "actual",
+      "kind": "generated",
+      "min_size_px": [
+        512,
+        900
+      ],
+      "prompt": "Use case: background-extraction / scientific-educational illustration.\nCreate ONE high-resolution standalone transparent PNG asset for manual placement in PowerPoint.\nAsset: A10. Subject: ONE upright clear rectangular spectrophotometer cuvette containing blue liquid to roughly half its height, matching the detached foreground cuvette in front of the instrument in the reference. Open rectangular top, glass wall highlights, flat rectangular base, three-quarter front perspective. No instrument, cap, label, scales, numbers or surrounding platform.\nUse the attached APPROVED Bradford reference ONLY for the cartoon art style, outline, shading, palette, perspective and identity of the intended object. Isolate and redraw this subject at high resolution rather than returning the whole figure.\nComposition: portrait about 0.6:1. Aim for about 1536 pixels along the longer useful subject dimension, with crisp dark ink edges at small print sizes. Keep the full subject, about 8 percent useful transparent padding, and no cropped edge.\nThe output must have genuine ALPHA TRANSPARENCY, including between isolated beads/vials and through outside negative space. No white background, white rectangle, checkerboard, panel, card, border, text, formula, title, workflow arrow or watermark.\nMatch the polished cartoon/comic style of the supplied reference, not a photograph. Scientific object silhouettes are conceptual illustrations; do not add fabricated microscopy, exact molecular bonds, measurements or results. Return ONLY this ONE semantic asset.",
+      "references": [
+        "reference/Bradford-B-r1.png"
+      ],
+      "pixel_size": [
+        974,
+        1615
+      ],
+      "sha256": "bf4fc749fd247aa17f29768a7759adcba0d0f908c348681d17af4ffc16ebc15e"
+    }
+  ],
+  "occurrences": [
+    {
+      "id": "O01",
+      "asset_id": "A01",
+      "bbox": [
+        70,
+        188,
+        224,
+        139
+      ],
+      "region": "R01 mechanism: unbound protein",
+      "fit_bbox": [
+        84.1608,
+        188.0,
+        195.6783,
+        139.0
+      ]
+    },
+    {
+      "id": "O02",
+      "asset_id": "A02",
+      "bbox": [
+        70,
+        474,
+        217,
+        88
+      ],
+      "region": "R01 mechanism: free dye",
+      "fit_bbox": [
+        108.1532,
+        474.0,
+        140.6935,
+        88.0
+      ]
+    },
+    {
+      "id": "O03",
+      "asset_id": "A03",
+      "bbox": [
+        50,
+        640,
+        260,
+        166
+      ],
+      "region": "R01 mechanism: bound complex",
+      "fit_bbox": [
+        55.5,
+        640.0,
+        249.0,
+        166.0
+      ]
+    },
+    {
+      "id": "O04",
+      "asset_id": "A04",
+      "bbox": [
+        421,
+        193,
+        235,
+        130
+      ],
+      "region": "R02 known standards",
+      "fit_bbox": [
+        421.0,
+        199.25,
+        235.0,
+        117.5
+      ]
+    },
+    {
+      "id": "O05",
+      "asset_id": "A05",
+      "bbox": [
+        493,
+        462,
+        96,
+        135
+      ],
+      "region": "R03 unknown input",
+      "fit_bbox": [
+        496.0,
+        462.0,
+        90.0,
+        135.0
+      ]
+    },
+    {
+      "id": "O06",
+      "asset_id": "A05",
+      "bbox": [
+        493,
+        730,
+        96,
+        132
+      ],
+      "region": "R04 blank input",
+      "fit_bbox": [
+        497.0,
+        730.0,
+        88.0,
+        132.0
+      ]
+    },
+    {
+      "id": "O07",
+      "asset_id": "A06",
+      "bbox": [
+        863,
+        94,
+        72,
+        90
+      ],
+      "region": "R05 standard dye addition",
+      "fit_bbox": [
+        863.0,
+        103.0,
+        72.0,
+        72.0
+      ]
+    },
+    {
+      "id": "O08",
+      "asset_id": "A06",
+      "bbox": [
+        863,
+        364,
+        72,
+        90
+      ],
+      "region": "R06 unknown dye addition",
+      "fit_bbox": [
+        863.0,
+        373.0,
+        72.0,
+        72.0
+      ]
+    },
+    {
+      "id": "O09",
+      "asset_id": "A06",
+      "bbox": [
+        863,
+        643,
+        72,
+        94
+      ],
+      "region": "R07 blank dye addition",
+      "fit_bbox": [
+        863.0,
+        654.0,
+        72.0,
+        72.0
+      ]
+    },
+    {
+      "id": "O10",
+      "asset_id": "A07",
+      "bbox": [
+        802,
+        185,
+        89,
+        112
+      ],
+      "region": "R05 standard bound sample",
+      "fit_bbox": [
+        809.1667,
+        185.0,
+        74.6667,
+        112.0
+      ]
+    },
+    {
+      "id": "O11",
+      "asset_id": "A07",
+      "bbox": [
+        804,
+        453,
+        87,
+        119
+      ],
+      "region": "R06 unknown bound sample",
+      "fit_bbox": [
+        807.8333,
+        453.0,
+        79.3333,
+        119.0
+      ]
+    },
+    {
+      "id": "O12",
+      "asset_id": "A08",
+      "bbox": [
+        804,
+        735,
+        87,
+        117
+      ],
+      "region": "R07 blank reagent",
+      "fit_bbox": [
+        808.5,
+        735.0,
+        78.0,
+        117.0
+      ]
+    },
+    {
+      "id": "O13",
+      "asset_id": "A09",
+      "bbox": [
+        1233,
+        222,
+        365,
+        264
+      ],
+      "region": "R08 absorbance instrument",
+      "fit_bbox": [
+        1233.0,
+        224.1513,
+        365.0,
+        259.6974
+      ]
+    },
+    {
+      "id": "O14",
+      "asset_id": "A10",
+      "bbox": [
+        1281,
+        344,
+        91,
+        177
+      ],
+      "region": "R08 foreground cuvette",
+      "fit_bbox": [
+        1281.0,
+        357.056,
+        91.0,
+        150.8881
+      ]
+    }
+  ],
+  "native_elements": [
+    {
+      "id": "TITLE",
+      "kind": "shape",
+      "bbox": [
+        28,
+        10,
+        855,
+        88
+      ]
+    },
+    {
+      "id": "MECHANISM",
+      "kind": "shape",
+      "bbox": [
+        20,
+        120,
+        330,
+        794
+      ]
+    },
+    {
+      "id": "STANDARDS",
+      "kind": "shape",
+      "bbox": [
+        378,
+        125,
+        318,
+        230
+      ]
+    },
+    {
+      "id": "UNKNOWN",
+      "kind": "shape",
+      "bbox": [
+        378,
+        393,
+        318,
+        225
+      ]
+    },
+    {
+      "id": "BLANK",
+      "kind": "shape",
+      "bbox": [
+        378,
+        654,
+        318,
+        229
+      ]
+    },
+    {
+      "id": "MEASUREMENT",
+      "kind": "shape",
+      "bbox": [
+        1189,
+        127,
+        443,
+        407
+      ]
+    },
+    {
+      "id": "CORRECTION",
+      "kind": "shape",
+      "bbox": [
+        1199,
+        589,
+        435,
+        129
+      ]
+    },
+    {
+      "id": "CALIBRATION",
+      "kind": "shape",
+      "bbox": [
+        1175,
+        791,
+        241,
+        108
+      ]
+    },
+    {
+      "id": "ESTIMATE",
+      "kind": "shape",
+      "bbox": [
+        1435,
+        791,
+        233,
+        108
+      ]
+    },
+    {
+      "id": "LINE_protein_binding",
+      "kind": "connector",
+      "points": [
+        [
+          182,
+          568
+        ],
+        [
+          182,
+          626
+        ]
+      ],
+      "color": "#1559A4"
+    },
+    {
+      "id": "HEAD_protein_binding",
+      "kind": "arrowhead"
+    },
+    {
+      "id": "LINE_standards_to_bound",
+      "kind": "connector",
+      "points": [
+        [
+          699,
+          242
+        ],
+        [
+          793,
+          242
+        ]
+      ],
+      "color": "#1559A4"
+    },
+    {
+      "id": "HEAD_standards_to_bound",
+      "kind": "arrowhead"
+    },
+    {
+      "id": "LINE_unknown_to_bound",
+      "kind": "connector",
+      "points": [
+        [
+          699,
+          512
+        ],
+        [
+          795,
+          512
+        ]
+      ],
+      "color": "#1559A4"
+    },
+    {
+      "id": "HEAD_unknown_to_bound",
+      "kind": "arrowhead"
+    },
+    {
+      "id": "LINE_blank_to_reagent",
+      "kind": "connector",
+      "points": [
+        [
+          699,
+          795
+        ],
+        [
+          795,
+          795
+        ]
+      ],
+      "color": "#1559A4"
+    },
+    {
+      "id": "HEAD_blank_to_reagent",
+      "kind": "arrowhead"
+    },
+    {
+      "id": "LINE_standard_measurement",
+      "kind": "connector",
+      "points": [
+        [
+          912,
+          242
+        ],
+        [
+          1134,
+          242
+        ],
+        [
+          1134,
+          310
+        ],
+        [
+          1180,
+          310
+        ]
+      ],
+      "color": "#1559A4"
+    },
+    {
+      "id": "HEAD_standard_measurement",
+      "kind": "arrowhead"
+    },
+    {
+      "id": "LINE_unknown_measurement",
+      "kind": "connector",
+      "points": [
+        [
+          912,
+          512
+        ],
+        [
+          1134,
+          512
+        ],
+        [
+          1134,
+          310
+        ]
+      ],
+      "color": "#1559A4"
+    },
+    {
+      "id": "LINE_blank_measurement",
+      "kind": "connector",
+      "points": [
+        [
+          912,
+          795
+        ],
+        [
+          1162,
+          795
+        ],
+        [
+          1162,
+          488
+        ],
+        [
+          1180,
+          488
+        ]
+      ],
+      "color": "#1559A4"
+    },
+    {
+      "id": "HEAD_blank_measurement",
+      "kind": "arrowhead"
+    },
+    {
+      "id": "LINE_measurement_to_correction",
+      "kind": "connector",
+      "points": [
+        [
+          1408,
+          535
+        ],
+        [
+          1408,
+          580
+        ]
+      ],
+      "color": "#1559A4"
+    },
+    {
+      "id": "HEAD_measurement_to_correction",
+      "kind": "arrowhead"
+    },
+    {
+      "id": "LINE_corrected_standards",
+      "kind": "connector",
+      "points": [
+        [
+          1282,
+          720
+        ],
+        [
+          1282,
+          782
+        ]
+      ],
+      "color": "#DCA12A"
+    },
+    {
+      "id": "HEAD_corrected_standards",
+      "kind": "arrowhead"
+    },
+    {
+      "id": "LINE_corrected_unknown",
+      "kind": "connector",
+      "points": [
+        [
+          1559,
+          720
+        ],
+        [
+          1559,
+          782
+        ]
+      ],
+      "color": "#007345"
+    },
+    {
+      "id": "HEAD_corrected_unknown",
+      "kind": "arrowhead"
+    },
+    {
+      "id": "LINE_calibration_to_estimate",
+      "kind": "connector",
+      "points": [
+        [
+          1417,
+          845
+        ],
+        [
+          1428,
+          845
+        ]
+      ],
+      "color": "#DCA12A"
+    },
+    {
+      "id": "HEAD_calibration_to_estimate",
+      "kind": "arrowhead"
+    },
+    {
+      "id": "ASSET_A01_O01",
+      "kind": "shape",
+      "bbox": [
+        84.1608,
+        188,
+        195.6783,
+        139
+      ]
+    },
+    {
+      "id": "ASSET_A02_O02",
+      "kind": "shape",
+      "bbox": [
+        108.1532,
+        474,
+        140.6935,
+        88
+      ]
+    },
+    {
+      "id": "ASSET_A03_O03",
+      "kind": "shape",
+      "bbox": [
+        55.5,
+        640,
+        249,
+        166
+      ]
+    },
+    {
+      "id": "ASSET_A04_O04",
+      "kind": "shape",
+      "bbox": [
+        421,
+        199.25,
+        235,
+        117.5
+      ]
+    },
+    {
+      "id": "ASSET_A05_O05",
+      "kind": "shape",
+      "bbox": [
+        496,
+        462,
+        90,
+        135
+      ]
+    },
+    {
+      "id": "ASSET_A05_O06",
+      "kind": "shape",
+      "bbox": [
+        497,
+        730,
+        88,
+        132
+      ]
+    },
+    {
+      "id": "ASSET_A06_O07",
+      "kind": "shape",
+      "bbox": [
+        863,
+        103,
+        72,
+        72
+      ]
+    },
+    {
+      "id": "ASSET_A06_O08",
+      "kind": "shape",
+      "bbox": [
+        863,
+        373,
+        72,
+        72
+      ]
+    },
+    {
+      "id": "ASSET_A06_O09",
+      "kind": "shape",
+      "bbox": [
+        863,
+        654,
+        72,
+        72
+      ]
+    },
+    {
+      "id": "ASSET_A07_O10",
+      "kind": "shape",
+      "bbox": [
+        809.1667,
+        185,
+        74.6667,
+        112
+      ]
+    },
+    {
+      "id": "ASSET_A07_O11",
+      "kind": "shape",
+      "bbox": [
+        807.8333,
+        453,
+        79.3333,
+        119
+      ]
+    },
+    {
+      "id": "ASSET_A08_O12",
+      "kind": "shape",
+      "bbox": [
+        808.5,
+        735,
+        78,
+        117
+      ]
+    },
+    {
+      "id": "ASSET_A09_O13",
+      "kind": "shape",
+      "bbox": [
+        1233,
+        224.1513,
+        365,
+        259.6974
+      ]
+    },
+    {
+      "id": "ASSET_A10_O14",
+      "kind": "shape",
+      "bbox": [
+        1281,
+        357.056,
+        91,
+        150.8881
+      ]
+    },
+    {
+      "id": "TXT_title",
+      "kind": "text",
+      "label": "Bradford protein assay",
+      "bbox": [
+        42,
+        17,
+        825,
+        74
+      ],
+      "font": "Comic Sans MS",
+      "size": 55
+    },
+    {
+      "id": "TXT_mechanism_heading",
+      "kind": "text",
+      "label": "Protein-dye binding",
+      "bbox": [
+        37,
+        133,
+        294,
+        44
+      ],
+      "font": "Comic Sans MS",
+      "size": 30
+    },
+    {
+      "id": "TXT_protein_label",
+      "kind": "text",
+      "label": "Protein\n(unknown or standard)",
+      "bbox": [
+        46,
+        325,
+        280,
+        56
+      ],
+      "font": "Comic Sans MS",
+      "size": 25
+    },
+    {
+      "id": "TXT_plus",
+      "kind": "text",
+      "label": "+",
+      "bbox": [
+        157,
+        382,
+        55,
+        54
+      ],
+      "font": "Comic Sans MS",
+      "size": 52
+    },
+    {
+      "id": "TXT_dye_label",
+      "kind": "text",
+      "label": "Coomassie G-250",
+      "bbox": [
+        53,
+        435,
+        264,
+        38
+      ],
+      "font": "Comic Sans MS",
+      "size": 24
+    },
+    {
+      "id": "TXT_bound_label",
+      "kind": "text",
+      "label": "Blue protein-dye\ncomplex\n(stabilized blue form)",
+      "bbox": [
+        42,
+        807,
+        286,
+        82
+      ],
+      "font": "Comic Sans MS",
+      "size": 25
+    },
+    {
+      "id": "TXT_standards_heading",
+      "kind": "text",
+      "label": "Known standards",
+      "bbox": [
+        390,
+        138,
+        294,
+        44
+      ],
+      "font": "Comic Sans MS",
+      "size": 32
+    },
+    {
+      "id": "TXT_unknown_heading",
+      "kind": "text",
+      "label": "Unknown sample",
+      "bbox": [
+        390,
+        405,
+        294,
+        46
+      ],
+      "font": "Comic Sans MS",
+      "size": 32
+    },
+    {
+      "id": "TXT_blank_heading",
+      "kind": "text",
+      "label": "Reagent blank",
+      "bbox": [
+        390,
+        667,
+        294,
+        46
+      ],
+      "font": "Comic Sans MS",
+      "size": 32
+    },
+    {
+      "id": "TXT_dye_standards",
+      "kind": "text",
+      "label": "Coomassie\nG-250",
+      "bbox": [
+        745,
+        123,
+        120,
+        49
+      ],
+      "font": "Comic Sans MS",
+      "size": 20
+    },
+    {
+      "id": "TXT_dye_unknown",
+      "kind": "text",
+      "label": "Coomassie\nG-250",
+      "bbox": [
+        745,
+        393,
+        120,
+        49
+      ],
+      "font": "Comic Sans MS",
+      "size": 20
+    },
+    {
+      "id": "TXT_dye_blank",
+      "kind": "text",
+      "label": "Coomassie\nG-250",
+      "bbox": [
+        745,
+        673,
+        120,
+        49
+      ],
+      "font": "Comic Sans MS",
+      "size": 20
+    },
+    {
+      "id": "TXT_binding_standards",
+      "kind": "text",
+      "label": "Protein-dye binding\n(standards)",
+      "bbox": [
+        750,
+        303,
+        250,
+        51
+      ],
+      "font": "Comic Sans MS",
+      "size": 24
+    },
+    {
+      "id": "TXT_binding_unknown",
+      "kind": "text",
+      "label": "Protein-dye binding\n(unknown)",
+      "bbox": [
+        750,
+        578,
+        250,
+        51
+      ],
+      "font": "Comic Sans MS",
+      "size": 24
+    },
+    {
+      "id": "TXT_measurement_heading",
+      "kind": "text",
+      "label": "Read absorbance\nat 595 nm",
+      "bbox": [
+        1210,
+        141,
+        399,
+        80
+      ],
+      "font": "Comic Sans MS",
+      "size": 35
+    },
+    {
+      "id": "TXT_correction_heading",
+      "kind": "text",
+      "label": "Blank correction",
+      "bbox": [
+        1218,
+        598,
+        397,
+        44
+      ],
+      "font": "Comic Sans MS",
+      "size": 33
+    },
+    {
+      "id": "TXT_calibration",
+      "kind": "text",
+      "label": "Calibration\nfrom standards",
+      "bbox": [
+        1187,
+        805,
+        218,
+        75
+      ],
+      "font": "Comic Sans MS",
+      "size": 27
+    },
+    {
+      "id": "TXT_estimate",
+      "kind": "text",
+      "label": "Estimate\nprotein amount",
+      "bbox": [
+        1443,
+        805,
+        217,
+        75
+      ],
+      "font": "Comic Sans MS",
+      "size": 27
+    },
+    {
+      "id": "TXT_A_corrected_base",
+      "kind": "text",
+      "label": "A",
+      "bbox": [
+        1224,
+        649,
+        23,
+        42
+      ],
+      "font": "Times New Roman",
+      "size": 32
+    },
+    {
+      "id": "TXT_A_corrected_sub",
+      "kind": "text",
+      "label": "corrected",
+      "bbox": [
+        1247,
+        672,
+        85,
+        26
+      ],
+      "font": "Times New Roman",
+      "size": 21
+    },
+    {
+      "id": "TXT_equals",
+      "kind": "text",
+      "label": "=",
+      "bbox": [
+        1336,
+        649,
+        25,
+        42
+      ],
+      "font": "Times New Roman",
+      "size": 32
+    },
+    {
+      "id": "TXT_A_sample_base",
+      "kind": "text",
+      "label": "A",
+      "bbox": [
+        1368,
+        649,
+        23,
+        42
+      ],
+      "font": "Times New Roman",
+      "size": 32
+    },
+    {
+      "id": "TXT_A_sample_sub",
+      "kind": "text",
+      "label": "sample",
+      "bbox": [
+        1391,
+        672,
+        62,
+        26
+      ],
+      "font": "Times New Roman",
+      "size": 21
+    },
+    {
+      "id": "TXT_minus",
+      "kind": "text",
+      "label": "−",
+      "bbox": [
+        1456,
+        649,
+        25,
+        42
+      ],
+      "font": "Times New Roman",
+      "size": 32
+    },
+    {
+      "id": "TXT_A_blank_base",
+      "kind": "text",
+      "label": "A",
+      "bbox": [
+        1488,
+        649,
+        23,
+        42
+      ],
+      "font": "Times New Roman",
+      "size": 32
+    },
+    {
+      "id": "TXT_A_blank_sub",
+      "kind": "text",
+      "label": "blank",
+      "bbox": [
+        1511,
+        672,
+        62,
+        26
+      ],
+      "font": "Times New Roman",
+      "size": 21
+    },
+    {
+      "id": "TXT_screen_A",
+      "kind": "text",
+      "label": "A",
+      "bbox": [
+        1450,
+        323,
+        22,
+        34
+      ],
+      "font": "Times New Roman",
+      "size": 26
+    },
+    {
+      "id": "TXT_screen_595",
+      "kind": "text",
+      "label": "595",
+      "bbox": [
+        1472,
+        337,
+        32,
+        20
+      ],
+      "font": "Times New Roman",
+      "size": 16
+    },
+    {
+      "id": "TXT_screen_nm",
+      "kind": "text",
+      "label": "nm",
+      "bbox": [
+        1508,
+        331,
+        29,
+        25
+      ],
+      "font": "Times New Roman",
+      "size": 19
+    }
+  ],
+  "coverage_review": {
+    "region_pass": true,
+    "small_motif_pass": true,
+    "notes": "All mechanism icons, input vials, reagent-addition micro-scenes, cuvette, screen text, and terminal calibration/quantification panels inventoried. Purple arrow on instrument has no endpoint and is omitted from native frame as identified in prior review."
+  },
+  "frame": {
+    "file": "output/Bradford-editable-frame.pptx",
+    "status": "actual",
+    "native_labels": [
+      "Bradford protein assay",
+      "Protein-dye binding",
+      "Protein\n(unknown or standard)",
+      "+",
+      "Coomassie G-250",
+      "Blue protein-dye\ncomplex\n(stabilized blue form)",
+      "Known standards",
+      "Unknown sample",
+      "Reagent blank",
+      "Coomassie\nG-250",
+      "Coomassie\nG-250",
+      "Coomassie\nG-250",
+      "Protein-dye binding\n(standards)",
+      "Protein-dye binding\n(unknown)",
+      "Read absorbance\nat 595 nm",
+      "Blank correction",
+      "Calibration\nfrom standards",
+      "Estimate\nprotein amount",
+      "A",
+      "corrected",
+      "=",
+      "A",
+      "sample",
+      "−",
+      "A",
+      "blank",
+      "A",
+      "595",
+      "nm"
+    ],
+    "counts": [
+      {
+        "guide": false,
+        "slideId": "15sw2x",
+        "nativeObjects": 73
+      },
+      {
+        "guide": true,
+        "slideId": "h9aag5",
+        "nativeObjects": 101
+      }
+    ]
+  },
+  "delivery": {
+    "contact_sheet": "output/transparent-assets.png",
+    "placement_guide": "output/placements.zh-CN.md",
+    "assembly_guide": "output/assembly.zh-CN.md",
+    "prompts_index": "prompts/index.json",
+    "frame_preview": "output/frame-preview.png"
+  },
+  "regions": [
+    {
+      "id": "R01",
+      "treatment": "mechanism: native text/arrows plus A01/A02/A03"
+    },
+    {
+      "id": "R02",
+      "treatment": "standards: native panel/text plus A04"
+    },
+    {
+      "id": "R03",
+      "treatment": "unknown: native panel/text plus A05"
+    },
+    {
+      "id": "R04",
+      "treatment": "blank: native panel/text plus A05"
+    },
+    {
+      "id": "R05",
+      "treatment": "standard reaction: native labels plus A06/A07"
+    },
+    {
+      "id": "R06",
+      "treatment": "unknown reaction: native labels plus A06/A07"
+    },
+    {
+      "id": "R07",
+      "treatment": "blank addition: native label plus A06/A08"
+    },
+    {
+      "id": "R08",
+      "treatment": "measurement: native panel/labels plus A09/A10"
+    },
+    {
+      "id": "R09",
+      "treatment": "blank correction: native equation and panel only"
+    },
+    {
+      "id": "R10",
+      "treatment": "calibration: native text/panel only"
+    },
+    {
+      "id": "R11",
+      "treatment": "quantity estimate: native text/panel only"
+    }
+  ]
+}

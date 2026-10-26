@@ -1,0 +1,15 @@
+# Local state, credentials and build caches
+.DS_Store
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.venv/
+node_modules/
+.build/
+*.log
+~$*.pptx
+
+# Full example archive is attached to GitHub Releases
+dist/bradford-example.zip

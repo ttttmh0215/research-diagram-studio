@@ -1,0 +1,7 @@
+Use case: background-extraction / scientific-educational illustration.
+Create ONE high-resolution standalone transparent PNG asset for manual placement in PowerPoint.
+Asset: A02. Subject: ONE coherent cluster of about nine separate red/ruby round dye beads, staggered in two loose rows. Match the small red Coomassie dye bead cluster in the LEFT mechanism panel. Every bead is unattached, with NO bonds, lattice or molecular formula. Smooth comic shading and dark outlines; no protein.
+Use the attached APPROVED Bradford reference ONLY for the cartoon art style, outline, shading, palette, perspective and identity of the intended object. Isolate and redraw this subject at high resolution rather than returning the whole figure.
+Composition: wide 1.6:1. Aim for about 1536 pixels along the longer useful subject dimension, with crisp dark ink edges at small print sizes. Keep the full subject, about 8 percent useful transparent padding, and no cropped edge.
+The output must have genuine ALPHA TRANSPARENCY, including between isolated beads/vials and through outside negative space. No white background, white rectangle, checkerboard, panel, card, border, text, formula, title, workflow arrow or watermark.
+Match the polished cartoon/comic style of the supplied reference, not a photograph. Scientific object silhouettes are conceptual illustrations; do not add fabricated microscopy, exact molecular bonds, measurements or results. Return ONLY this ONE semantic asset.

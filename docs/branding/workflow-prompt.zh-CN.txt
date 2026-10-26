@@ -1,0 +1,18 @@
+Use case: infographic-diagram / scientific-educational.
+Create ONE beautiful illustrated workflow diagram in simplified Chinese for the README of the open-source project Research Diagram Studio. The subject is how a human and an AI agent turn a scientific paper into cartoon research-figure materials, then a user assembles the final PDF.
+Canvas: a wide, compact landscape figure about 2.65:1, pure warm-white background, no outer border. Five clearly numbered stages run from left to right, joined by deliberate colored arrows. Cartoon scientific sketchbook style with dark navy crisp outlines, deep turquoise, bright cobalt, coral, golden amber, lilac accents, soft pale supporting washes. The illustration should feel like a cohesive research design workbench, not an enterprise dashboard or a row of plain black-white rectangles.
+Exact title: "科研绘图工作流"
+Stage 01 exact heading: "读论文，理思路"
+Illustration: an open paper with a magnifier and a small input-module-output sketch. Small label: "提炼研究主干".
+Stage 02 exact heading: "生成几张参考图"
+Illustration: three overlapping miniature figure boards with genuinely different layouts and palettes, marked A B C. Small label: "比较布局、配色和配图".
+Stage 03 exact heading: "选喜欢的，再修改"
+Illustration: a user feedback speech balloon, a drawing pencil, and a selected figure board with a small tick. Small label: "你来决定保留什么".
+A single thin coral feedback arrow runs below stages 02 and 03 from stage 03 BACK TO stage 02, labelled "按反馈调整". It must end at stage 02, not at paper reading.
+Stage 04 exact heading: "拆素材，做框架"
+Illustration: a true conceptual split into TWO independent outputs: left a small collection of colorful isolated PNG illustration stickers, right a miniature editable slide with text areas and connectors but empty illustration spaces. Labels exactly "透明 PNG 素材" and "可编辑 PPT 框架". The two deliverables converge only into the next assembly stage.
+Stage 05 exact heading: "PPT 组装，导出 PDF"
+Illustration: an illustrative hand bringing a single icon into a slide frame, then a tidy final paper page stamped PDF. Small label: "放入素材，调整后导出".
+At bottom a compact continuous deliverables ribbon with heading "最终获得" and exactly these short items: "参考示意图"  "高清透明素材"  "完整 PPT 框架"  "定位与组装说明"  "实际生图提示词".
+Typography: readable bold rounded Chinese headings, uncluttered short labels, consistent font hierarchy; precise clear Chinese characters. Keep characters large enough for README reading. Short labels only, no prose paragraphs.
+Important relationships: stage 03 is the user's style-selection and revision step; bulk assets and the PPT frame are produced after approval. PNGs are independent raster artwork; text, panels and workflow arrows in the PPT are native editable objects. The final PDF is exported after the USER assembles and adjusts the PPT, not automatically presented as already assembled. Do not add measured data, domain-specific lab workflow, robots, fake app UI, vendor logos or tiny illegible labels.

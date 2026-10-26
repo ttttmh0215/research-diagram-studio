@@ -1,0 +1,21 @@
+Use case: text-localization.
+Translate the attached Research Diagram Studio workflow diagram into ENGLISH while preserving its complete existing illustration style, five-stage left-to-right layout, colors, white background, subjects, feedback-arrow endpoint, and compact wide aspect ratio. Keep the artwork and icon identities as closely as possible. Render a clean high-resolution English reference diagram. Do not add/remove stages.
+Replace all visible Chinese labels using exactly these short English labels:
+Title: "Research Diagram Workflow"
+01 heading: "Read the paper"
+01 caption: "Find the scientific backbone"
+Inside tiny input-process-output strip: "Input" "Process" "Output"
+02 heading: "Generate concepts"
+02 caption: "Compare layouts and colors"
+03 heading: "Choose and refine"
+03 caption: "You decide what to keep"
+Feedback arrow label: "Revise with your feedback"
+04 heading: "Make assets and frame"
+04 left caption: "Transparent PNG assets"
+04 right caption: "Editable PPT frame"
+05 heading: "Assemble and export"
+05 caption: "Place assets, adjust, export PDF"
+Bottom ribbon heading: "What you get"
+Bottom ribbon items, in order: "Reference figure" "Transparent assets" "Complete PPT frame" "Placement and assembly guide" "Actual image prompts"
+Keep the PDF stamp "PDF". Keep the concept-board labels A, B, C.
+Typography: dark navy, bold rounded friendly English lettering with strong readable hierarchy; use two lines within a label if needed, without adding extra text. Keep all text and drawings inside the canvas, no watermark or extra legend. The feedback arrow goes ONLY from stage03 back to stage02. The final PDF follows the user's manual PPT assembly and adjustment.

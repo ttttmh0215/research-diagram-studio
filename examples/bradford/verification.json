@@ -1,0 +1,148 @@
+{
+  "passed": true,
+  "errors": [],
+  "warnings": [],
+  "unique_assets": 10,
+  "artwork_occurrences": 14,
+  "assets": [
+    {
+      "id": "A01",
+      "file": "assets/A01_unbound_protein.png",
+      "size": [
+        1488,
+        1057
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "actual_transparency": true
+    },
+    {
+      "id": "A02",
+      "file": "assets/A02_free_dye_cluster.png",
+      "size": [
+        1586,
+        992
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "actual_transparency": true
+    },
+    {
+      "id": "A03",
+      "file": "assets/A03_blue_protein_dye_complex.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "actual_transparency": true
+    },
+    {
+      "id": "A04",
+      "file": "assets/A04_five_standard_vials.png",
+      "size": [
+        1774,
+        887
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "actual_transparency": true
+    },
+    {
+      "id": "A05",
+      "file": "assets/A05_capped_sample_vial.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "actual_transparency": true
+    },
+    {
+      "id": "A06",
+      "file": "assets/A06_pipette_red_drop.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "actual_transparency": true
+    },
+    {
+      "id": "A07",
+      "file": "assets/A07_open_blue_bound_sample.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "actual_transparency": true
+    },
+    {
+      "id": "A08",
+      "file": "assets/A08_open_blank_reagent.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "actual_transparency": true
+    },
+    {
+      "id": "A09",
+      "file": "assets/A09_spectrophotometer.png",
+      "size": [
+        1487,
+        1058
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "actual_transparency": true
+    },
+    {
+      "id": "A10",
+      "file": "assets/A10_blue_cuvette.png",
+      "size": [
+        974,
+        1615
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "actual_transparency": true
+    }
+  ],
+  "ppt": {
+    "slides": 2,
+    "native_shapes": 174,
+    "native_connectors": 0,
+    "pictures": 0,
+    "image_fills": 0,
+    "media_files": 0
+  },
+  "scope": "Manifest/file/alpha/pixel/PPT checks only; visual omissions, semantic correctness and rendering require separate review."
+}

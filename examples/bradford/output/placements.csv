@@ -1,0 +1,15 @@
+﻿occurrence,asset,file,region,left_px,top_px,width_px,height_px,x_in,y_in,width_in,height_in
+O01,A01,assets/A01_unbound_protein.png,R01 mechanism: unbound protein,84.1608,188.0,195.6783,139.0,0.87667,1.95833,2.03832,1.44792
+O02,A02,assets/A02_free_dye_cluster.png,R01 mechanism: free dye,108.1532,474.0,140.6935,88.0,1.1266,4.9375,1.46556,0.91667
+O03,A03,assets/A03_blue_protein_dye_complex.png,R01 mechanism: bound complex,55.5,640.0,249.0,166.0,0.57812,6.66667,2.59375,1.72917
+O04,A04,assets/A04_five_standard_vials.png,R02 known standards,421.0,199.25,235.0,117.5,4.38542,2.07552,2.44792,1.22396
+O05,A05,assets/A05_capped_sample_vial.png,R03 unknown input,496.0,462.0,90.0,135.0,5.16667,4.8125,0.9375,1.40625
+O06,A05,assets/A05_capped_sample_vial.png,R04 blank input,497.0,730.0,88.0,132.0,5.17708,7.60417,0.91667,1.375
+O07,A06,assets/A06_pipette_red_drop.png,R05 standard dye addition,863.0,103.0,72.0,72.0,8.98958,1.07292,0.75,0.75
+O08,A06,assets/A06_pipette_red_drop.png,R06 unknown dye addition,863.0,373.0,72.0,72.0,8.98958,3.88542,0.75,0.75
+O09,A06,assets/A06_pipette_red_drop.png,R07 blank dye addition,863.0,654.0,72.0,72.0,8.98958,6.8125,0.75,0.75
+O10,A07,assets/A07_open_blue_bound_sample.png,R05 standard bound sample,809.1667,185.0,74.6667,112.0,8.42882,1.92708,0.77778,1.16667
+O11,A07,assets/A07_open_blue_bound_sample.png,R06 unknown bound sample,807.8333,453.0,79.3333,119.0,8.41493,4.71875,0.82639,1.23958
+O12,A08,assets/A08_open_blank_reagent.png,R07 blank reagent,808.5,735.0,78.0,117.0,8.42188,7.65625,0.8125,1.21875
+O13,A09,assets/A09_spectrophotometer.png,R08 absorbance instrument,1233.0,224.1513,365.0,259.6974,12.84375,2.33491,3.80208,2.70518
+O14,A10,assets/A10_blue_cuvette.png,R08 foreground cuvette,1281.0,357.056,91.0,150.8881,13.34375,3.71933,0.94792,1.57175

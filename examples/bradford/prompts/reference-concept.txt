@@ -1,0 +1,43 @@
+Use case: infographic-diagram / scientific-educational.
+Create ONE complete polished cartoon/comic research workflow reference figure for user review.
+Candidate ID for metadata: Bradford-B-r1. Do not print the ID in the artwork.
+Paper: A rapid and sensitive method for the quantitation of microgram quantities of protein utilizing the principle of protein-dye binding (1976). Discipline: Biology / biochemistry.
+Purpose: Protein dye binding measured relative to blank and known protein standards.
+Background: pure white, print-friendly. Intended use: a compact full-width academic paper figure, about 180 mm wide, with all labels readable. Render at high resolution with crisp edges.
+SCIENTIFIC CONTRACT:
+Three distinct preparation inputs: known protein standards, unknown protein sample, and reagent blank. Add the same Coomassie Brilliant Blue G-250 reagent to each. Protein binding stabilizes the blue form; do NOT show the reagent blank binding protein or becoming an identical dark-blue sample. Measure absorbance at 595 nm relative to the reagent blank. The standard measurements establish calibration, and the unknown measurement is interpreted using that calibration to estimate its protein amount. Calibration and unknown are separate information inputs converging at quantification, not standards physically mixed into unknown. Do not draw invented calibrated data, extrapolation, molecular bonds, a cell experiment, or a DNA assay.
+EXACT VISIBLE LABELS (use these short labels; equations need exact symbols):
+"Bradford protein assay"
+"Known standards"
+"Unknown sample"
+"Reagent blank"
+"Coomassie G-250"
+"Protein–dye binding"
+"Read absorbance at 595 nm"
+"Blank correction"
+"Calibration from standards"
+"Estimate protein amount"
+LAYOUT AND VISUAL TREATMENT:
+Landscape 1.8:1. A compact left-hand mechanism inset shows protein plus dye yielding blue complex. To the right, a structured assay board has standards and unknown as two main rows with a slim blank lane. Measurement column feeds calibration (standards) and unknown signal separately, merging only at amount estimate. Deep violet, amber and marine blue, rounded hand-drawn lab notebook style.
+ILLUSTRATION SUBJECTS:
+pipette, known-standard vial rack, one unknown vial, pale reagent blank, reddish/brown dye drop changing to blue protein-bound mixture, cuvette and compact spectrophotometer, small protein ribbon as conceptual icon (not exact structure); no fake standard-curve data
+TYPOGRAPHY:
+Dark, bold, clear rounded hand-lettered headings reminiscent of Comic Sans MS Bold, restrained journal figure body labels, precise serif math symbols. Consistent font size hierarchy. Short labels only, no long prose or abstract.
+REFERENCE ROLES:
+The paper supplies content only. No previous diagram or external style image is being supplied or copied. Create an original cartoon visual treatment suited to this discipline.
+CONSTRAINTS:
+Follow exactly the causal, computational and parallel relationships above. Every connector needs a clear source and destination, arrowhead at destination, no ambiguous crossings, unconnected branches, invented loops or decorative data curves. Do not invent performance numbers or experimental results. Apparatus/particles/material scenes are explanatory cartoons, not measured evidence. No unrelated robots, logos, paper bibliographies, watermarks or oversized empty margins. Keep all artwork and text within canvas; dense but readable, clean separation between panels. This is a complete visual concept, with text and arrows included for review; transparent assets and editable PPT come only after user selection.
+MANDATORY CONNECTORS (named endpoints; physical material, measurement data and control are distinct):
+Known standards -> Protein–dye binding (standards) [sample]
+Unknown sample -> Protein–dye binding (unknown) [sample]
+Coomassie G-250 -> Protein–dye binding (standards) [reagent]
+Coomassie G-250 -> Protein–dye binding (unknown) [reagent]
+Coomassie G-250 -> Reagent blank [reagent only; no protein]
+Protein–dye binding (standards) -> Read absorbance at 595 nm [standard measurement]
+Protein–dye binding (unknown) -> Read absorbance at 595 nm [unknown measurement]
+Reagent blank -> Read absorbance at 595 nm [reference measurement]
+Read absorbance at 595 nm -> Blank correction [data]
+Blank correction -> Calibration from standards [standard data]
+Blank correction -> Estimate protein amount [unknown data]
+Calibration from standards -> Estimate protein amount [calibration information]
+Draw a visible arrow for EVERY mandatory connection; proximity alone does not show a connection. Route outside cards when needed. Never connect a recurrence to an Initialize node. Never add a numerical evidence plot. The presentation may simplify icons, but must not remove mandatory input or output connections.

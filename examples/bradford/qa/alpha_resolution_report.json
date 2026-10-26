@@ -1,0 +1,222 @@
+[
+  {
+    "asset_id": "A01",
+    "file": "assets/A01_unbound_protein.png",
+    "size": [
+      1488,
+      1057
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "fully_transparent_fraction": 0.6437,
+    "visible_bbox_alpha32": [
+      102,
+      75,
+      1428,
+      948
+    ],
+    "occurrences": 1,
+    "min_effective_dpi_at_180mm_figure": 1803.8,
+    "edges_not_cropped": true
+  },
+  {
+    "asset_id": "A02",
+    "file": "assets/A02_free_dye_cluster.png",
+    "size": [
+      1586,
+      992
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "fully_transparent_fraction": 0.6683,
+    "visible_bbox_alpha32": [
+      58,
+      148,
+      1532,
+      830
+    ],
+    "occurrences": 1,
+    "min_effective_dpi_at_180mm_figure": 2674.0,
+    "edges_not_cropped": true
+  },
+  {
+    "asset_id": "A03",
+    "file": "assets/A03_blue_protein_dye_complex.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "fully_transparent_fraction": 0.5519,
+    "visible_bbox_alpha32": [
+      63,
+      48,
+      1484,
+      984
+    ],
+    "occurrences": 1,
+    "min_effective_dpi_at_180mm_figure": 1463.3,
+    "edges_not_cropped": true
+  },
+  {
+    "asset_id": "A04",
+    "file": "assets/A04_five_standard_vials.png",
+    "size": [
+      1774,
+      887
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "fully_transparent_fraction": 0.4267,
+    "visible_bbox_alpha32": [
+      107,
+      80,
+      1671,
+      803
+    ],
+    "occurrences": 1,
+    "min_effective_dpi_at_180mm_figure": 1790.7,
+    "edges_not_cropped": true
+  },
+  {
+    "asset_id": "A05",
+    "file": "assets/A05_capped_sample_vial.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "fully_transparent_fraction": 0.6715,
+    "visible_bbox_alpha32": [
+      270,
+      134,
+      754,
+      1404
+    ],
+    "occurrences": 2,
+    "min_effective_dpi_at_180mm_figure": 2698.9,
+    "edges_not_cropped": true
+  },
+  {
+    "asset_id": "A06",
+    "file": "assets/A06_pipette_red_drop.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "fully_transparent_fraction": 0.8625,
+    "visible_bbox_alpha32": [
+      403,
+      73,
+      1143,
+      1180
+    ],
+    "occurrences": 3,
+    "min_effective_dpi_at_180mm_figure": 4131.4,
+    "edges_not_cropped": true
+  },
+  {
+    "asset_id": "A07",
+    "file": "assets/A07_open_blue_bound_sample.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "fully_transparent_fraction": 0.6741,
+    "visible_bbox_alpha32": [
+      216,
+      176,
+      808,
+      1384
+    ],
+    "occurrences": 2,
+    "min_effective_dpi_at_180mm_figure": 3061.8,
+    "edges_not_cropped": true
+  },
+  {
+    "asset_id": "A08",
+    "file": "assets/A08_open_blank_reagent.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "fully_transparent_fraction": 0.7128,
+    "visible_bbox_alpha32": [
+      234,
+      179,
+      790,
+      1361
+    ],
+    "occurrences": 1,
+    "min_effective_dpi_at_180mm_figure": 3114.1,
+    "edges_not_cropped": true
+  },
+  {
+    "asset_id": "A09",
+    "file": "assets/A09_spectrophotometer.png",
+    "size": [
+      1487,
+      1058
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "fully_transparent_fraction": 0.3508,
+    "visible_bbox_alpha32": [
+      25,
+      28,
+      1471,
+      1039
+    ],
+    "occurrences": 1,
+    "min_effective_dpi_at_180mm_figure": 966.4,
+    "edges_not_cropped": true
+  },
+  {
+    "asset_id": "A10",
+    "file": "assets/A10_blue_cuvette.png",
+    "size": [
+      974,
+      1615
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "fully_transparent_fraction": 0.4763,
+    "visible_bbox_alpha32": [
+      187,
+      100,
+      796,
+      1514
+    ],
+    "occurrences": 1,
+    "min_effective_dpi_at_180mm_figure": 2538.9,
+    "edges_not_cropped": true
+  }
+]
