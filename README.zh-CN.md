@@ -33,7 +33,59 @@ Research Diagram Studio 是一个**科研绘图 Agent Skill**。把论文、方�
 </tr>
 </table>
 
-[有出处的论文风格参考](docs/style-references.md)与本项目实际产物分开展示。后续可以继续添加风格、版式和图类型指导，仓库不限定为某一种画风。宣传工作流采用卡通插画，也不限制实际输出风格。
+## 看一套实际交付是什么样
+
+[Bradford 实例](examples/bradford/README.zh-CN.md)保留了选定参考图、独立素材、原生 PPT 留空框架和定位页，共有 **10 种素材、14 个放置位置和 2 页 PPT**。下面是当时选定的参考示意图，最终组装由用户在 PPT 中完成。
+
+[![Bradford 选定的完整参考示意图](examples/bradford/reference/Bradford-B-r1.png)](examples/bradford/reference/Bradford-B-r1.png)
+
+### 独立透明素材近看
+
+上面的素材总览对应独立 PNG 文件。下面三张都是实际素材，可以分别移动、缩放和重复使用：
+
+<table>
+<tr>
+<td width="33%"><a href="examples/bradford/assets/A04_five_standard_vials.png"><img src="examples/bradford/assets/A04_five_standard_vials.png" alt="五个标准品瓶组成的独立透明素材"></a><br><b>完整小场景</b><br>一组试管可以作为一个连贯素材整体复用。</td>
+<td width="33%"><a href="examples/bradford/assets/A03_blue_protein_dye_complex.png"><img src="examples/bradford/assets/A03_blue_protein_dye_complex.png" alt="独立透明的蛋白与染料结合概念插画"></a><br><b>原理示意图案</b><br>插画与可编辑文字、公式分开。</td>
+<td width="33%"><a href="examples/bradford/assets/A09_spectrophotometer.png"><img src="examples/bradford/assets/A09_spectrophotometer.png" alt="独立透明的分光光度计插画"></a><br><b>可复用仪器图案</b><br>按定位说明插入框架中的对应位置。</td>
+</tr>
+</table>
+
+### 可编辑框架与编号定位页
+
+<table>
+<tr>
+<td width="50%"><a href="examples/bradford/output/frame-preview.png"><img src="examples/bradford/output/frame-preview.png" alt="图案位置留空的 Bradford 原生可编辑 PPT 框架"></a><br><b>干净留空框架</b><br>文字、公式片段、面板和箭头是原生对象，图案位置留空。</td>
+<td width="50%"><a href="examples/bradford/output/placement-guide.png"><img src="examples/bradford/output/placement-guide.png" alt="Bradford 素材的编号定位页"></a><br><b>素材放在哪里</b><br>每个放置位置都能对应素材，包括同一素材的重复使用。</td>
+</tr>
+</table>
+
+[下载可编辑 PPT](examples/bradford/output/Bradford-editable-frame.pptx) · [查看坐标表](examples/bradford/output/placements.csv) · [组装说明](examples/bradford/output/assembly.zh-CN.md) · [下载完整案例 ZIP](https://github.com/ttttmh0215/research-diagram-studio/releases/latest/download/bradford-example.zip)
+
+## 论文风格参考
+
+下面四张**有明确出处的论文参考图**，可以直观看到卡通主体、真实图片、多层面板、重复角色和流程连接如何组合。它们是视觉风格参考；本 Skill 的实际交付素材展示在上面。
+
+[![ThinkAct：卡通主体与推理、执行过程的组合](docs/images/references/thinkact.jpg)](https://proceedings.neurips.cc/paper_files/paper/2025/hash/7749f9c0d5ff109231be21e910a3ced2-Abstract-Conference.html)
+
+*ThinkAct — Huang 等，NeurIPS 2025。紧凑的横向叙事，将卡通角色、推理文本与真实任务画面组合起来。*
+
+<table>
+<tr>
+<td width="50%"><a href="https://openreview.net/forum?id=Ws8swqL5ob"><img src="docs/images/references/photoagent.jpg" alt="PhotoAgent：人工操作与智能体工作流对比参考图"></a><br><b>PhotoAgent</b> · Yao 等<br>对比式叙事、循环结构、人物与图标的配合。</td>
+<td width="50%"><a href="https://openreview.net/forum?id=54U3XHf7qq"><img src="docs/images/references/memoryvla.jpg" alt="MemoryVLA：认知机制与机器人模型架构参考图"></a><br><b>MemoryVLA</b> · Shi 等<br>卡通机制、模型模块与真实图像的混合排版。</td>
+</tr>
+</table>
+
+[![多智能体研究三栏参考图：记忆、交互与研究发现](docs/images/references/troublemaker.jpg)](https://aclanthology.org/2025.acl-long.859/)
+
+*A Troublemaker with Contagious Jailbreak Makes Chaos in Honest Towns — Men 等，ACL 2025。三个相互联系的分区、重复角色与统一图例。*
+
+参考图均出自公开论文，仅供学习与风格参考；如有版权或署名问题，请通过 [Issue](https://github.com/ttttmh0215/research-diagram-studio/issues) 联系仓库作者删除。
+
+[查看全部参考说明](docs/style-references.md) · [来源记录](docs/reference-sources.json) · [第三方素材说明](THIRD_PARTY_NOTICES.md)
+
+以后新增的风格和图类型指导仍放在同一个 Agent Skill 中，沿用现有审查与选择流程。当前几何素材继续明确标注为造型试作。
 
 ## 完整绘图流程
 
