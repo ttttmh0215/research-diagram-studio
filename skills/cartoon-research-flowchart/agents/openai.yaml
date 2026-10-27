@@ -1,4 +1,4 @@
 interface:
-  display_name: "Cartoon Research Flowchart"
-  short_description: "Choose cartoon concepts, then get assets and an empty PPT"
-  default_prompt: "Use $cartoon-research-flowchart to extract my paper into several cartoon concepts, ask for my selection and revisions, then deliver all transparent assets and an empty editable PowerPoint frame for manual assembly."
+  display_name: "Research Diagram Studio"
+  short_description: "Compare diagram styles, review assets, assemble in PPT"
+  default_prompt: "Use $cartoon-research-flowchart to compare two cartoon and two geometric concepts for my paper, review their content and visual plausibility, then after my selection deliver reviewed transparent assets and the matching empty PPT frame for manual assembly."

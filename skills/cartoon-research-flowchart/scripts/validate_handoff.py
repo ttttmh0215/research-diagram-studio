@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Read-only checks for a cartoon figure's manual-assembly handoff package."""
+"""Read-only file, review-provenance and PPT checks; not an image critic."""
 from __future__ import annotations
 
 import argparse
@@ -31,7 +31,20 @@ def validate(project_path: Path) -> dict:
             return None
         return path
 
-    if project.get('stage') != 'ready':
+    schema = project.get('schema_version', 1)
+    if type(schema) is not int or schema not in (1, 2):
+        errors.append('Unsupported schema_version; use 1 (legacy) or 2')
+    modern = schema == 2
+    scope = project.get('scope', 'full')
+    if scope not in ('full', 'sample'):
+        errors.append('scope must be full or sample')
+    is_sample = scope == 'sample'
+    if is_sample and not modern:
+        errors.append('Sample handoffs require schema_version 2 and visual review records')
+    if modern and project.get('style') not in ('cartoon', 'geometric'):
+        errors.append('Record style as cartoon or geometric')
+    expected_stage = 'samples_ready' if is_sample else 'ready'
+    if project.get('stage') != expected_stage:
         errors.append('The manifest is not at the ready stage; do not claim a completed handoff')
     approved = project.get('approved') or {}
     if not approved.get('id') or not str(approved.get('user_statement', '')).strip():
@@ -42,6 +55,8 @@ def validate(project_path: Path) -> dict:
     if reference and approved.get('sha256'):
         if hashlib.sha256(reference.read_bytes()).hexdigest() != approved['sha256']:
             errors.append('Approved reference hash mismatch')
+    if modern and not approved.get('sha256'):
+        errors.append('Schema 2 requires the approved reference hash')
 
     canvas = project.get('canvas', {})
     cw, ch = canvas.get('width'), canvas.get('height')
@@ -51,6 +66,8 @@ def validate(project_path: Path) -> dict:
         errors.append('Canvas needs positive width/height and a declared coordinate unit')
 
     assets = project.get('assets', [])
+    if is_sample and not assets:
+        errors.append('A sample handoff needs at least one actual asset')
     asset_ids = [a.get('id') for a in assets]
     if len(asset_ids) != len(set(asset_ids)) or any(not x for x in asset_ids):
         errors.append('Asset IDs must be nonempty and unique')
@@ -115,18 +132,79 @@ def validate(project_path: Path) -> dict:
             errors.append(f'{oid}: placement is empty or outside the canvas')
     if len(occurrence_ids) != len(set(occurrence_ids)) or any(not x for x in occurrence_ids):
         errors.append('Occurrence IDs must be nonempty and unique')
-    for aid in set(asset_ids) - used_assets:
-        warnings.append(f'{aid}: delivered asset has no recorded placement')
-    if not project.get('native_elements'):
+    if not is_sample:
+        for aid in set(asset_ids) - used_assets:
+            warnings.append(f'{aid}: delivered asset has no recorded placement')
+    if not is_sample and not project.get('native_elements'):
         errors.append('Record the native structure separately from artwork occurrences')
     review = project.get('coverage_review', {})
-    if not review.get('region_pass') or not review.get('small_motif_pass'):
+    if not is_sample and (not review.get('region_pass') or not review.get('small_motif_pass')):
         errors.append('Both region-wide and small-motif inventory passes must be completed')
 
+    if modern:
+        def visual_review(record, relative, role):
+            if not isinstance(record, dict):
+                errors.append(f'{role}: missing visual review')
+                return
+            if record.get('file') != relative:
+                errors.append(f'{role}: review file differs from the delivered file')
+            path = existing(relative, role)
+            if path and record.get('sha256') != hashlib.sha256(path.read_bytes()).hexdigest():
+                errors.append(f'{role}: review hash is missing or stale')
+            for axis in ('fidelity', 'intrinsic'):
+                decision = record.get(axis)
+                if not isinstance(decision, dict) or decision.get('status') != 'pass':
+                    errors.append(f'{role}: {axis} visual review has not passed')
+                    continue
+                observations = decision.get('observations')
+                if not (isinstance(observations, list) and observations
+                        and all(isinstance(s, str) and s.strip() for s in observations)):
+                    errors.append(f'{role}: {axis} needs actual visual observations')
+            issues = record.get('issues', [])
+            if not isinstance(issues, list):
+                errors.append(f'{role}: issues must be a list')
+            else:
+                for issue in issues:
+                    if not (isinstance(issue, dict)
+                            and issue.get('severity') in ('blocking', 'minor')
+                            and issue.get('status') in ('open', 'resolved')
+                            and isinstance(issue.get('description'), str)
+                            and issue['description'].strip()):
+                        errors.append(f'{role}: malformed visual issue record')
+                    elif issue['severity'] == 'blocking' and issue['status'] == 'open':
+                        errors.append(f'{role}: unresolved blocking visual issue')
+
+        reviews = project.get('visual_reviews')
+        if not isinstance(reviews, dict):
+            reviews = {}
+        visual_review(reviews.get('reference'), approved.get('file'), 'reference visual review')
+        asset_reviews = reviews.get('assets', [])
+        if not isinstance(asset_reviews, list):
+            errors.append('Asset visual reviews must be a list')
+            asset_reviews = []
+        by_id = {}
+        for record in asset_reviews:
+            if not isinstance(record, dict) or not record.get('asset_id'):
+                errors.append('Each asset visual review needs an asset_id')
+                continue
+            aid = record['asset_id']
+            if aid in by_id:
+                errors.append(f'{aid}: duplicate asset visual review')
+            by_id[aid] = record
+        reference_hash = hashlib.sha256(reference.read_bytes()).hexdigest() if reference else None
+        for asset in assets:
+            aid = asset.get('id')
+            record = by_id.get(aid)
+            visual_review(record, asset.get('file'), f'{aid} visual review')
+            if record and record.get('reference_sha256') != reference_hash:
+                errors.append(f'{aid}: asset review reference hash differs from the approved reference')
+
     frame = project.get('frame', {})
-    if frame.get('status') != 'actual':
+    if modern and not is_sample and frame.get('mode') not in ('native', 'text-placement'):
+        errors.append('Record frame.mode as native or text-placement')
+    if not is_sample and frame.get('status') != 'actual':
         errors.append('PPT frame is still planned or pending')
-    pptx = existing(frame.get('file'), 'empty PPT frame')
+    pptx = existing(frame.get('file'), 'empty PPT frame') if not is_sample else None
     ppt_report = None
     if pptx:
         try:
@@ -173,9 +251,14 @@ def validate(project_path: Path) -> dict:
             errors.append(f'Cannot inspect PPTX: {exc}')
 
     delivery = project.get('delivery', {})
-    for key in ['contact_sheet', 'placement_guide', 'assembly_guide', 'prompts_index']:
+    delivery_keys = ['contact_sheet', 'prompts_index']
+    if not is_sample:
+        delivery_keys += ['placement_guide', 'assembly_guide']
+    for key in delivery_keys:
         existing(delivery.get(key), key)
-    if delivery.get('frame_preview'):
+    if is_sample:
+        pass
+    elif delivery.get('frame_preview'):
         existing(delivery['frame_preview'], 'frame preview')
     elif not delivery.get('frame_preview_unavailable_reason'):
         errors.append('Provide a rendered frame preview or its actual unavailability reason')
@@ -185,7 +268,8 @@ def validate(project_path: Path) -> dict:
     return {'passed': not errors, 'errors': errors, 'warnings': warnings,
             'unique_assets': len(assets), 'artwork_occurrences': len(occurrences),
             'assets': assets_report, 'ppt': ppt_report,
-            'scope': 'Manifest/file/alpha/pixel/PPT checks only; visual omissions, semantic correctness and rendering require separate review.'}
+            'handoff_scope': scope,
+            'scope': 'File/alpha/pixel/PPT and recorded visual-review provenance only; this script does not judge images or prove scientific correctness.'}
 
 
 def main() -> int:

@@ -1,92 +1,67 @@
-# Review state, full-figure inventory and delivery
+# State, inventory and delivery
 
-The assistant maintains these records; the user should review images and express preferences naturally, not fill JSON forms. One `project.json` can hold the small state and final manifest, with actual prompts in separate files.
+The agent maintains records; the user chooses actual images and gives natural feedback. Use one project.json plus separate actual prompt files. New work uses schema_version 2. Existing schema-1 examples remain readable without pretending they passed the new review gates.
 
-## Review state
+## Selection state
 
-```json
-{
-  "schema_version": 1,
-  "stage": "review",
-  "brief_file": "paper-brief.md",
-  "candidates": [
-    {"id": "A-r1", "file": "previews/A-r1.png", "status": "actual", "presented": true},
-    {"id": "B-r1", "file": "previews/B-r1.png", "status": "actual", "presented": true},
-    {"id": "C-r1", "file": "previews/C-r1.png", "status": "actual", "presented": true}
-  ],
-  "selected_id": "B-r1",
-  "last_presented_id": "C-r1",
-  "approved": null,
-  "feedback": [
-    {"base_id": "B-r1", "keep": ["layout"], "change": ["use A's palette"]}
-  ],
-  "frame": {"file": "frame.pptx", "status": "planned"}
-}
-```
+Record candidate IDs, styles, files, whether they were actually shown, visual-review decisions, selected_id, last_presented_id, feedback and production approval. A selected image is not automatically approved. Record the actual user statement and its scope. A planned revision is not a shown image; a newest file does not replace the chosen branch.
 
-Use `brief`, `review`, `revision`, `production` and `ready` as stage labels. `status: actual` means a file exists, not that the user has approved it. Store the accepted version and concise user approval wording in `approved`; do not infer it from a selected ID alone.
+Stages: brief, review, revision, production, ready (full) or samples_ready (explicit sample subset). scope is full or sample. style is cartoon or geometric. Once an inspected file changes, its old visual review is stale.
 
-`last_presented_id` records the last actual image shown; an explicit user selection may refer to an earlier shown image. Resolve pronouns against that context and the current selected branch. A merely planned `B-r2` cannot be described as already shown or approved. An explicit instruction to apply specified edits and proceed without further review is scoped authorization; keep that distinct from having viewed a new image.
+## Inventory and assembly
 
-When the user combines concepts, generate a new revision, record its parent(s), show it and follow their instructions about acceptance. Keep old versions available. Resume the selected branch rather than the newest file in a directory.
+For full scope perform both a region pass and a small-motif/inset/terminal pass. Distinguish unique assets from every repeated occurrence. An occurrence has id, asset_id and bbox [left, top, width, height] in canvas units. Keep the PPT/reference aspect ratio consistent.
 
-## Full-figure inventory
+Record assets as generated or provided, actual/planned/pending, with file, description, intended construction, optional minimum pixel size and actual hash. Supplied evidence needs its registration hash, preserved background reasons where applicable, and separately recorded requested transformations. Paths in the public handoff are package-relative.
 
-Start with a region checklist covering every panel. Then sweep across titles, corners, insets, terminals, legends, repeated motifs and small explanatory scenes. Record what becomes native structure and what becomes an asset.
+Cartoon mode keeps native panels/labels/equations/connectors and empty illustration slots. Geometric mode generates compound shapes, frames and designed arrows; PPT frame.mode is text-placement with native labels/formulas and empty asset slots. A user-requested native override is allowed. Keep IDs out of publication-visible text; a guide may show them.
 
-Two different counts matter:
+## Schema-2 production outline
 
-- **Unique assets**: actual distinct files to deliver.
-- **Occurrences**: every placement in the approved figure, including repeated uses of one asset.
-
-Each artwork occurrence needs an asset ID and bounding box. Each native component needs a native-element record. A compound panel can contain both. Explicitly describe any agreed removal; a missing element is not an omission decision.
-
-Suggested compact production fields:
+This is a structural example, NOT an existing finished package. File paths, coordinates and review observations must come from actual work; null hashes and unreviewed decisions cannot pass validation.
 
 ```json
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "scope": "full",
+  "style": "geometric",
   "stage": "production",
-  "selected_id": "B-r2",
+  "selected_id": "G1-r2",
   "approved": {
-    "id": "B-r2",
+    "id": "G1-r2",
     "file": "reference/approved.png",
-    "sha256": "optional-actual-file-digest",
-    "user_statement": "Use this one; make the assets and empty PPT frame."
+    "sha256": null,
+    "user_statement": "Use this version; make the assets and PPT."
   },
   "canvas": {"width": 1800, "height": 1100, "unit": "px"},
   "assets": [
-    {
-      "id": "A01",
-      "kind": "generated",
-      "file": "assets/A01_subject.png",
-      "status": "planned",
-      "description": "A paper-specific cartoon subject",
-      "min_size_px": [600, 600]
-    },
-    {
-      "id": "A02",
-      "kind": "provided",
-      "file": "assets/A02_source_panel.png",
-      "status": "planned",
-      "preserve_background_reason": "Background belongs to the supplied scientific image."
-    }
+    {"id": "A01", "kind": "generated", "role": "geometry",
+     "file": "assets/A01.png", "status": "planned",
+     "construction": "One coherent source-grounded geometric module",
+     "min_size_px": [600, 600]}
   ],
   "occurrences": [
-    {"id": "O01", "region": "R01", "asset_id": "A01", "bbox": [80, 120, 180, 180]},
-    {"id": "O02", "region": "R02", "asset_id": "A01", "bbox": [720, 120, 180, 180]},
-    {"id": "O03", "region": "R03", "asset_id": "A02", "bbox": [1100, 150, 500, 350]}
+    {"id": "O01", "asset_id": "A01", "bbox": [100, 150, 400, 300]}
   ],
-  "native_elements": [
-    {"id": "N01", "kind": "text", "label": "Input"},
-    {"id": "N02", "kind": "connector", "from": "input", "to": "processor"}
-  ],
-  "coverage_review": {
-    "region_pass": false,
-    "small_motif_pass": false,
-    "notes": "Complete both visual sweeps before final delivery."
+  "native_elements": [{"id": "N01", "kind": "text", "label": "Input"}],
+  "coverage_review": {"region_pass": false, "small_motif_pass": false},
+  "frame": {"file": "frame.pptx", "status": "planned", "mode": "text-placement",
+            "native_labels": ["Input"]},
+  "visual_reviews": {
+    "reference": {
+      "file": "reference/approved.png", "sha256": null,
+      "fidelity": {"status": "unreviewed", "observations": []},
+      "intrinsic": {"status": "unreviewed", "observations": []},
+      "issues": []
+    },
+    "assets": [
+      {"asset_id": "A01", "file": "assets/A01.png", "sha256": null,
+       "reference_sha256": null,
+       "fidelity": {"status": "unreviewed", "observations": []},
+       "intrinsic": {"status": "unreviewed", "observations": []},
+       "issues": []}
+    ]
   },
-  "frame": {"file": "frame.pptx", "status": "planned", "native_labels": ["Input"]},
   "delivery": {
     "contact_sheet": "asset-contact-sheet.png",
     "placement_guide": "placement-guide.md",
@@ -97,39 +72,25 @@ Suggested compact production fields:
 }
 ```
 
-This is an example, not an actual produced package. Replace dimensions, labels, IDs, paths, minimum sizes and the optional digest with real project values. Omit the `sha256` field until it is actually computed. Set `ready` only when actual production and verification have finished. If frame rendering is unavailable, use `frame_preview: null` and record `frame_preview_unavailable_reason` in `delivery`.
+After actually inspecting a file, set each review axis to pass, needs_revision or uncertain with concrete observations. For a concept, fidelity is to paper/brief; for an asset, it is to the approved source region/construction. Intrinsic validity is independent in both cases. Each issue is an object with severity (blocking/minor), status (open/resolved), and a nonempty description. Ready requires both axes passed and no open blockers; malformed issue entries are rejected.
 
-All production asset files should be inside the delivery folder and referenced by relative paths. Generated artwork is PNG with actual transparency. Provided images/vectors remain identified as provided sources. A provided SVG or PDF can be preserved as a source asset even when the alpha-check script cannot raster-inspect it.
+Compute sha256 from the actual inspected files. Each asset review also records the actual approved reference_sha256. A renamed, regenerated, changed or newly based asset needs a new review; the validator rejects stale/missing file/hash bindings.
 
-For unchanged supplied evidence, compute its SHA256 at registration and store it as the asset's `sha256`; the validator checks the delivered copy against that digest. If a user-requested transformation is needed, retain the original and record the operation, source digest and delivered-file digest separately. File identity does not replace visual interpretation, but it prevents accidentally delivering a generated look-alike as the supplied evidence.
+## Sample-only branch
 
-## Spatial correspondence
-
-`bbox` is `[left, top, width, height]` in the declared canvas unit. Record every reuse. Convert coordinates consistently when authoring PowerPoint; check that its slide aspect ratio matches the reference canvas.
-
-Keep each placement empty in the main frame. An optional guide can show numbered placements over a separate preview, or list coordinates and sizes. Avoid visible asset IDs in the publication frame. Say which supplied image goes in which slot.
+When explicitly requested, use scope: sample and finish at samples_ready. Register only the requested actual asset subset and its reviews, the selected reference with review/hash, a canvas, contact_sheet and prompts_index. Occurrences are optional; if supplied their boxes must be valid. A sample needs no PPT, native_elements, full-coverage flags, placement guide or assembly guide. Do not call it the complete figure handoff.
 
 ## Asset quality
 
-Choose output pixels from the intended print width and desired effective resolution: pixels ≈ width_mm / 25.4 × dpi. Prefer around 600 dpi for small line-art assets when feasible, with at least 300 dpi or the user's specified threshold. `min_size_px` lets the validator check the requested minimum; a user still needs to inspect line sharpness, padding and scientific fidelity.
+Pixels ≈ printed width_mm / 25.4 × dpi. Prefer about 600 dpi for small line-art assets where feasible, with at least 300 dpi or the user's threshold. Real alpha needs transparent and visible pixels; a painted checkerboard is not alpha. Inspect correctly composited light/dark views for halos, clipping and stray pixels. Do not remove meaningful evidence backgrounds to force transparency.
 
-True alpha requires transparent and visible pixels; a checkerboard drawn on an opaque canvas fails this test. A correct alpha channel does not alone establish that edges are clean. Do not remove the meaningful background from evidence to force a transparency claim.
+## Delivery and validation
 
-## Final handoff
+Full package: approved reference, reviewed assets, contact sheet, empty frame, frame preview, project.json, placement/assembly guides and actual prompts. If frame rendering is unavailable, record frame_preview: null and the actual frame_preview_unavailable_reason. Report native counts and actual rendering scope without calling raster illustration internals editable.
 
-```text
-figure-package/
-├── reference/approved.png
-├── assets/...
-├── frame.pptx
-├── frame-preview.png
-├── asset-contact-sheet.png
-├── placement-guide.md
-├── ASSEMBLY.md
-├── project.json
-└── prompts/...
+Run:
+```bash
+python scripts/validate_handoff.py figure-package/project.json --report verification.json
 ```
 
-Explain the manual assembly steps briefly: open the native frame; insert each asset using the guide; preserve its aspect ratio; adjust size and alignment; reuse the same asset at repeated placements; inspect arrows and text; save an assembled copy; export the final figure at the paper size. The main frame remains a separate clean source.
-
-Run `python scripts/validate_handoff.py /path/to/figure-package/project.json --report /path/to/verification.json`. The script checks files, generated alpha, optional minimum pixels, occurrence references/boxes, approval record, frame aspect and native object inventory. It also rejects pictures, image fills and image media in the empty frame. It does not detect an unlisted visual element or judge scientific meaning; the two visual inventory passes and native rendering remain necessary.
+The script checks files, alpha, optional minimum pixels, occurrences, approval, PPT aspect/native inventory and absence of artwork images/media in the empty frame. Schema 2 additionally checks the two visual-review decisions, observations, unresolved blockers and file/reference hash bindings. These are provenance checks, NOT automated visual reasoning. A syntactically valid report cannot prove geometry or science correct; never manufacture observations to make it pass.

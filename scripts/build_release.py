@@ -39,7 +39,9 @@ def main():
     DIST.mkdir(exist_ok=True)
     skill_entries = files_under(SKILL, 'cartoon-research-flowchart/')
     skill_entries.append((ROOT / 'LICENSE', 'cartoon-research-flowchart/LICENSE'))
+    skill_entries.append((ROOT / 'VERSION', 'cartoon-research-flowchart/VERSION'))
     archive(DIST / 'cartoon-research-flowchart.zip', skill_entries)
+    archive(DIST / 'research-diagram-studio.zip', skill_entries)
     archive(DIST / 'bradford-example.zip', files_under(ROOT / 'examples/bradford', 'bradford-example/'))
     archives = sorted(DIST.glob('*.zip'))
     sums = [f'{hashlib.sha256(p.read_bytes()).hexdigest()}  {p.name}' for p in archives]

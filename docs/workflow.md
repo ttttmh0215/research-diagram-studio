@@ -1,76 +1,45 @@
-# The complete drawing workflow
+# Workflow and review
 
 [简体中文](workflow.zh-CN.md) · [Home](../README.md)
 
-Share your paper and ideas, compare a few designs, refine your favorite, then use the assets and frame to assemble the figure in PowerPoint.
+![Seven-stage workflow](images/workflow.en.png)
 
-[![The complete research diagram workflow](images/workflow.en.png)](images/workflow.en.png)
+1. Read the paper and build the scientific node/edge, label and evidence contract.
+2. Generate concepts: normally two cartoon and two geometric, unless the user specifies otherwise.
+3. Inspect each concept's fidelity to the paper and intrinsic visual validity. Repair blockers before presenting it as ready.
+4. Show reviewed concepts, ask for preference and errors, refine the selected branch, and record actual production authorization.
+5. Generate the authorized transparent assets and, when requested, the selected style's empty PPT frame.
+6. Inspect assets against the reference AND on their own. Check composited light/dark views, geometry and meaningful counts. Re-review regenerated files; present reviewed samples and ask for user corrections.
+7. Assemble manually in PPT, save a copy and export PDF.
 
-## 1. Read the paper
+## Two styles, one scientific contract
 
-The agent identifies the problem, main steps, inputs, and outputs, then turns them into a clear figure plan. It also plans the labels, fonts, colors, and illustrations. Include your own sketch, style references, or images if you already have them.
+Cartoon subjects and v0.1 native PPT panels/connectors remain available. Geometric mode adds compound planes, stacks, fans, matrices, folded/tapered modules and designed arrows, with flat/light/heavier components mixed. In that mode artwork includes frames and arrows, while the PPT provides editable text/formulas and placement slots.
 
-```text
-Read this paper and create three cartoon reference figures with different layouts and colors.
-Show me the images first. Make the assets and PPT after I choose a version.
-```
+Palette, lightness, saturation, outline, depth and shadow form a coordinated hierarchy. A request for new constructions must change visible structure, not just recolor the same objects.
 
-## 2. Generate a few concepts
+## What the reviews decide
 
-You usually receive three complete designs. They explain the same research, with different layouts, colors, and illustration choices. Compare the images and pick the direction closest to what you have in mind.
+For concepts, fidelity means correspondence with the paper/brief. For assets it means correspondence with the exact approved region/construction. Intrinsic validity is independent: a copied impossible stack, malformed face or unreadable symbol still needs repair even if it resembles the reference.
 
-## 3. Choose and refine
+The agent inspects actual files, records concrete observations, repairs blocking defects with at most two targeted attempts per item by default, and leaves unresolved work pending. User feedback follows this initial review. If a host automatically displays raw generation previews, those previews are not yet accepted deliverables.
 
-Describe what you like and what you want changed:
+A defective approved source cannot receive a false pass. Correct and review its version too, rebind files/hashes, and follow the existing authorization scope when deciding whether the corrected reference needs new user approval.
 
-```text
-Keep B's layout with A's colors. Use fewer illustrations on the right and make the figure flatter.
-```
+## Full handoff or samples
 
-The agent revises your chosen version. When you are happy with it, ask for the transparent assets and PPT frame.
+A full package includes the selected reference, every asset/occurrence, contact sheet, empty frame and preview, coordinates, guides, prompts and review records. Asking for a few samples authorizes only that subset; no full inventory or PPT is needed.
 
-## 4. Make the assets and frame
+See the [complete Bradford cartoon example](../examples/bradford/README.md) and [geometric appearance trials](../examples/geometric-preview/README.md). These have different validation scopes.
 
-The agent checks the whole figure and lists every illustration, including small icons, legends, insets, and repeated objects. It creates the illustrations separately and builds the text and structure in an editable PPT.
+## Validation
 
-[![Actual Bradford transparent assets](../examples/bradford/output/transparent-assets.png)](../examples/bradford/output/transparent-assets.png)
-
-This contact sheet shows an actual delivery. Its display background is white; each individual PNG has real transparency. The example has 10 unique assets across 14 placements, with vials and pipettes reused where needed.
-
-[![Native editable PowerPoint frame](../examples/bradford/output/frame-preview.png)](../examples/bradford/output/frame-preview.png)
-
-Edit the headings, labels, formulas, color blocks, lines, and arrows directly. The illustration spaces are reserved, and a separate numbered guide shows where each asset belongs.
-
-## What you get
-
-- **Transparent illustrations for PowerPoint!** Each illustration is a separate high-resolution PNG for insertion, movement, resizing, and reuse.
-- **A complete editable PPT frame!** Edit the text and structure, with illustration spaces left empty.
-- **Your complete reference figure!** Keep the exact design you selected to compare the overall result.
-- **A placement guide and coordinate table!** Find the position and suggested size of every asset.
-- **Actual image prompts and assembly instructions!** Keep refining the figure or explore another style later.
-
-[Download the complete example package](https://github.com/ttttmh0215/research-diagram-studio/releases/latest/download/bradford-example.zip) · [Download the PPT frame directly](../examples/bradford/output/Bradford-editable-frame.pptx)
-
-## 5. Assemble in PowerPoint and export your PDF
-
-Open the clean frame and insert the illustrations using the placement guide. Adjust the text size, illustration positions, arrow directions, and spacing directly in PowerPoint. Check that everything is present, save an assembled copy, and export a PDF for your paper or presentation. Export a PNG as well if needed.
-
-[![Numbered placement guide](../examples/bradford/output/placement-guide.png)](../examples/bradford/output/placement-guide.png)
-
-[Assembly instructions](../examples/bradford/output/assembly.md) · [Coordinates](../examples/bradford/output/placements.csv) · [Complete example](../examples/bradford/README.md)
-
-<details>
-<summary>For developers: prompts, domain guidance, and validation</summary>
-
-- [Workflow prompt templates](../skills/cartoon-research-flowchart/references/prompt-templates.md)
-- [Style and domain guidance](../skills/cartoon-research-flowchart/references/style-and-domains.md)
-- [Asset and delivery manifest](../skills/cartoon-research-flowchart/references/manifest-and-delivery.md)
-
-After installing Pillow, run the read-only checks with Python 3.9 or newer:
+New manifests use schema 2; the existing Bradford schema-1 example remains compatible. The script checks files, alpha, sizes, occurrence references, PPT structure, and review-record/file-hash correspondence. It cannot judge images or prove scientific correctness.
 
 ```bash
 python -m pip install Pillow
 python skills/cartoon-research-flowchart/scripts/validate_handoff.py examples/bradford/project.json
+python -m unittest discover -s tests -v
 ```
 
-</details>
+[Prompt templates](../skills/cartoon-research-flowchart/references/prompt-templates.md) · [Visual review](../skills/cartoon-research-flowchart/references/visual-review.md) · [Manifest schema](../skills/cartoon-research-flowchart/references/manifest-and-delivery.md)

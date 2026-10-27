@@ -1,21 +1,27 @@
-Use case: text-localization.
-Translate the attached Research Diagram Studio workflow diagram into ENGLISH while preserving its complete existing illustration style, five-stage left-to-right layout, colors, white background, subjects, feedback-arrow endpoint, and compact wide aspect ratio. Keep the artwork and icon identities as closely as possible. Render a clean high-resolution English reference diagram. Do not add/remove stages.
-Replace all visible Chinese labels using exactly these short English labels:
-Title: "Research Diagram Workflow"
-01 heading: "Read the paper"
-01 caption: "Find the scientific backbone"
-Inside tiny input-process-output strip: "Input" "Process" "Output"
-02 heading: "Generate concepts"
-02 caption: "Compare layouts and colors"
-03 heading: "Choose and refine"
-03 caption: "You decide what to keep"
-Feedback arrow label: "Revise with your feedback"
-04 heading: "Make assets and frame"
-04 left caption: "Transparent PNG assets"
-04 right caption: "Editable PPT frame"
-05 heading: "Assemble and export"
-05 caption: "Place assets, adjust, export PDF"
-Bottom ribbon heading: "What you get"
-Bottom ribbon items, in order: "Reference figure" "Transparent assets" "Complete PPT frame" "Placement and assembly guide" "Actual image prompts"
-Keep the PDF stamp "PDF". Keep the concept-board labels A, B, C.
-Typography: dark navy, bold rounded friendly English lettering with strong readable hierarchy; use two lines within a label if needed, without adding extra text. Keep all text and drawings inside the canvas, no watermark or extra legend. The feedback arrow goes ONLY from stage03 back to stage02. The final PDF follows the user's manual PPT assembly and adjustment.
+Edit the supplied ORIGINAL cartoon "Research Diagram Workflow" illustration. Preserve the SAME lively hand-drawn cartoon artwork, thick navy outlines, bright turquoise/cobalt/coral/amber/lilac colors, rounded lettering, brush-stroke heading tabs, smiling woman, papers, miniature figure boards, original biological illustration stickers, hand assembling a PPT, and bottom deliverables ribbon. The user specifically prefers this original visual style. Do not convert it into flat corporate cards, muted dashboard panels, realistic icons or a minimalist redesign.
+
+ONLY extend the existing sequence by inserting TWO matching cartoon review stages. Keep all five original stages in their existing order, preserve their artwork and short captions; renumber to seven stages. Widen/reflow the canvas as needed, approximately 3072×1152, so the added stages are readable and nothing is cropped.
+
+New order:
+01 original paper-reading stage.
+02 original generate-concepts stage with colorful boards A/B/C.
+03 NEW CONCEPT REVIEW: a cartoon magnifier inspecting a miniature complete flowchart with both connected nodes and a clean geometric stack, plus a small green check. Means scientific-content AND visual-plausibility review before showing the ready concept set.
+04 original choose-and-refine stage with the woman and selected board.
+05 original assets-plus-editable-PPT stage, preserving its TWO separate outputs.
+06 NEW ASSET REVIEW: a cartoon magnifier comparing a small reference crop and an isolated transparent geometric/illustration asset; tiny matching edge/shape marks and green check. Means reference fidelity AND intrinsic plausibility review before delivering usable assets.
+07 original manual PPT assembly and PDF-export stage.
+
+The coral feedback arrow runs ONLY from stage 04 back to stage 02. Keep the original footer ribbon and its five items. Integrate the two new drawings naturally at the same artistic detail level as the originals, with similar colored brush labels, not merely plain text boxes.
+
+Exact replacement headings and new short captions:
+Title remains "Research Diagram Workflow".
+01 "Read the paper"; preserve "Find the scientific backbone".
+02 "Generate concepts"; preserve "Compare layouts and colors".
+03 "Review concepts"; caption "Check content and plausibility".
+04 "Choose and refine"; preserve "You decide what to keep".
+05 "Make assets and frame"; preserve "Transparent PNG assets" and "Editable PPT frame".
+06 "Review assets"; caption "Check fidelity and plausibility".
+07 "Assemble and export"; preserve "Place assets, adjust, export PDF".
+Feedback "Revise with your feedback".
+Footer remains "What you get" with "Reference figure" "Transparent assets" "Complete PPT frame" "Placement and assembly guide" "Actual image prompts".
+Large legible exact lettering, no tiny paragraphs. Keep white background, complete artwork and balanced spacing. A complete attractive updated infographic, not a collage of cropped screenshots. The illustrated cartoon aesthetic describes the project workflow and does not limit the output diagram styles.

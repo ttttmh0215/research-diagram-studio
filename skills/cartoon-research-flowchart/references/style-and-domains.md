@@ -1,4 +1,6 @@
-# Cartoon scientific style and domain adaptation
+# Cartoon scientific style and shared domain adaptation
+
+The visual-language and asset/native-treatment guidance below describes the cartoon branch. For geometric compound shapes, frames and designed arrows, use [geometric-composition.md](geometric-composition.md). The scientific evidence and discipline constraints apply to both branches.
 
 ## Visual language
 

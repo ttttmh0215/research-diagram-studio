@@ -1,76 +1,45 @@
-# 完整绘图流程
+# 绘图流程与视觉审查
 
 [English](workflow.md) · [返回首页](../README.zh-CN.md)
 
-把论文和想法交给模型，先选图、再改图，确定后领取素材与框架，最后在 PPT 中完成组装。
+![七步科研绘图工作流](images/workflow.zh-CN.png)
 
-[![科研绘图完整工作流](images/workflow.zh-CN.png)](images/workflow.zh-CN.png)
+1. 读论文，整理节点、连线、标签、公式与证据来源。
+2. 生成参考方案，默认两张卡通和两张几何组合；以用户指定的数量和风格为先。
+3. 审查示意图：核对论文内容，并独立检查形状、文字与结构合理性，修复明显错误。
+4. 展示审查后的方案，询问偏好、错误和修改意见，保留选择分支并记录制作授权。
+5. 生成授权范围内的透明素材；需要完整交付时，制作对应风格的留空 PPT。
+6. 审查素材：对照确认稿，并检查素材本身。在明暗背景下看实际透明合成效果，检查结构和有意义的数量。重生成后重新审核，再请用户补充错误或修改意见。
+7. 用户在 PPT 中组装、另存副本并导出 PDF。
 
-## 1. 读论文，理思路
+## 两种风格，共用科学主干
 
-模型先找出研究要解决什么问题、用了哪些关键步骤、输入输出是什么，再把它们整理成一张图能讲清楚的内容。配色、字体、文字和小图案也在这一步一起规划。你已有草图、喜欢的风格或想放进去的图片，都可以提供。
+卡通分支继续提供原来的科研插画，以及原生 PPT 面板、文字、公式和连线。几何分支增加薄面、堆叠、扇面、矩阵、折叠与梯形组合和特色箭头；平面、轻阴影和少量厚重构件穿插。该分支将组合形状、框架与箭头做成素材，PPT 负责可编辑文字、公式和位置排布。
 
-```text
-根据这篇论文，先理清主要内容，再画三张不同布局和配色的卡通参考图。
-先给我看图，我选好之后再制作素材和 PPT。
-```
+配色、明暗、饱和度、线宽、厚度和阴影形成层次。用户要“组合造型更丰富”时，需要改变看得见的结构，不能只换颜色或加粗。
 
-## 2. 生成几张参考图
+## 两次审查分别检查什么
 
-通常会生成三张完整方案。它们讲同一套研究内容，但布局、配色和配图不同。你可以直接比较图片，找到最接近自己想法的方向。
+示意图的忠实度对应论文和绘图说明，素材的忠实度对应实际确认版本及指定区域。自身合理性独立检查：形状很像原图，但原图中的层叠、面片、符号本来就有问题，仍然需要修复。
 
-## 3. 选喜欢的，再修改
+模型必须实际看图并记录具体观察。每个失败项目默认最多做两次针对性修复，尚未解决的明确留待处理。用户反馈在初审之后补充；宿主如果自动显示了生图原始结果，这些也不自动算作通过审查的交付物。
 
-直接说出你的看法就行，例如：
+确认稿本身有问题时，也要修复和审查相应参考版本，更新文件与哈希对应；是否需要重新确认，按用户已有授权范围处理。不能只修好素材，却给有缺陷的旧参考图填写“通过”。
 
-```text
-保留 B 的结构，用 A 的配色。右侧少一点图案，整张图再扁一些。
-```
+## 完整交付与少量试样
 
-模型沿着选定版本继续修改。你觉得这一版可以了，再让它生成透明素材和 PPT 框架。
+完整交付包含确认稿、全部素材及位置、总览、留空 PPT 和预览、坐标与组装说明、实际提示词和审查记录。只想看几个素材时，只生成和审核该子集，不自动做全量清单或 PPT。
 
-## 4. 拆素材，做框架
+可查看 [Bradford 卡通完整实例](../examples/bradford/README.zh-CN.md)和[几何造型试作](../examples/geometric-preview/README.zh-CN.md)，两者验证范围不同。
 
-模型检查整张图，把每个需要的图案都登记下来，包括小图标、图例、嵌入子图和重复对象。图案单独生成，文字和框架放进可编辑 PPT。
+## 校验方式
 
-[![Bradford 透明素材总览](../examples/bradford/output/transparent-assets.png)](../examples/bradford/output/transparent-assets.png)
-
-上图是实际交付的素材总览，白底方便查看，独立 PNG 文件带真实透明背景。这个案例共有 10 种素材，对应 14 个位置，重复的瓶子和移液器会复用对应文件。
-
-[![图案位置留空的可编辑 PPT 框架](../examples/bradford/output/frame-preview.png)](../examples/bradford/output/frame-preview.png)
-
-框架里的标题、文字、公式、色块、线条和箭头可以直接编辑。素材位置已经留好，另有编号定位页帮你对应。
-
-## 最终获得
-
-- **PPT 透明背景素材！** 每个图案单独提供高清 PNG，方便插入、移动、缩放和重复使用。
-- **PPT 完整框架！** 文字和结构都能编辑，图案位置留空。
-- **完整参考示意图！** 保留最后选定的版本，方便对照整体效果。
-- **素材定位图和坐标表！** 标出每张素材应该放的位置与大小。
-- **生图提示词和组装说明！** 后续换图案、改风格时也能接着用。
-
-[下载完整实例包](https://github.com/ttttmh0215/research-diagram-studio/releases/latest/download/bradford-example.zip) · [直接下载 PPT 框架](../examples/bradford/output/Bradford-editable-frame.pptx)
-
-## 5. 在 PPT 里组装，导出 PDF
-
-打开干净框架页，对照定位图把素材放进去。文字大小、图案位置、箭头方向和整体间距，都可以在 PPT 里继续调整。检查没有遗漏后，另存一份组装版，导出 PDF，放进论文或汇报中；需要图片时也可以导出 PNG。
-
-[![素材编号定位页](../examples/bradford/output/placement-guide.png)](../examples/bradford/output/placement-guide.png)
-
-[详细组装方法](../examples/bradford/output/assembly.zh-CN.md) · [坐标表](../examples/bradford/output/placements.csv) · [完整案例](../examples/bradford/README.zh-CN.md)
-
-<details>
-<summary>给开发者：提示词、领域指南与检查脚本</summary>
-
-- [实际工作流提示词模板](../skills/cartoon-research-flowchart/references/prompt-templates.md)
-- [风格与领域指南](../skills/cartoon-research-flowchart/references/style-and-domains.md)
-- [素材与交付清单规范](../skills/cartoon-research-flowchart/references/manifest-and-delivery.md)
-
-安装 Pillow 后，可以用 Python 3.9 或更新版本运行只读检查：
+新清单使用 schema 2，旧 Bradford 清单继续兼容。脚本检查文件、透明通道、尺寸、位置引用、PPT 结构，以及审查记录与文件哈希的对应关系；它不会自动判断图形是否合理，也不会证明科学内容正确。
 
 ```bash
 python -m pip install Pillow
 python skills/cartoon-research-flowchart/scripts/validate_handoff.py examples/bradford/project.json
+python -m unittest discover -s tests -v
 ```
 
-</details>
+[提示词模板](../skills/cartoon-research-flowchart/references/prompt-templates.md) · [视觉审查细则](../skills/cartoon-research-flowchart/references/visual-review.md) · [清单格式](../skills/cartoon-research-flowchart/references/manifest-and-delivery.md)

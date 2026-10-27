@@ -1,0 +1,44 @@
+{
+  "en": {
+    "file": "docs/images/workflow.en.png",
+    "sha256": "430da84674176a34edaadef1cb509664f0caf54c837f890e100d418a945da317",
+    "size_px": [
+      2048,
+      768
+    ],
+    "fidelity": {
+      "status": "pass",
+      "observations": [
+        "Original cartoon characters, brush headings, colors and deliverables ribbon retained; two review steps inserted."
+      ]
+    },
+    "intrinsic": {
+      "status": "pass",
+      "observations": [
+        "Seven numbered stages in order; concept review precedes selection; asset review precedes manual assembly; feedback returns from choice to concept generation."
+      ]
+    },
+    "scope": "Workflow illustration, not a scientific evidence figure; user aesthetic feedback remains welcome."
+  },
+  "zh-CN": {
+    "file": "docs/images/workflow.zh-CN.png",
+    "sha256": "33c58f1791d11b6c5bb2fe2530ded96cec2e6552d8d0f571c31206b4b9ddef9f",
+    "size_px": [
+      2046,
+      768
+    ],
+    "fidelity": {
+      "status": "pass",
+      "observations": [
+        "Original cartoon characters, brush headings, colors and deliverables ribbon retained; two review steps inserted."
+      ]
+    },
+    "intrinsic": {
+      "status": "pass",
+      "observations": [
+        "Seven numbered stages in order; concept review precedes selection; asset review precedes manual assembly; feedback returns from choice to concept generation."
+      ]
+    },
+    "scope": "Workflow illustration, not a scientific evidence figure; user aesthetic feedback remains welcome."
+  }
+}
